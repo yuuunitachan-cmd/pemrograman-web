@@ -1,0 +1,131 @@
+<html>
+<head>
+   <title>Form Registrasi Account TCPNS</title> 
+   <style>
+	*{
+	  margin:0;
+	  padding:0;
+	 }
+	body{
+	  padding: 20px;
+	  background-color: AliceBlue  ; 
+	     }
+	 h1,p {
+	  text-align: center;
+	  margin:6px;
+	     }
+	 h1 {
+	  color: darkblue;
+	    }
+	 p {
+	  color: darkblue;
+	   }
+	 table {
+	  width: fit-content;
+	  margin: auto;
+	     }
+	input{
+	  width: 100%;
+	     }
+	button {
+	  padding: 4px 8px;
+	  width: 80px;
+	  background-color: lightpurple; 
+	     }
+	td {
+	  text-align: right;
+	    }
+	.jenis-kelamin,
+	.tanggal-lahir {
+	 text-align: left;
+	  }
+	.tombol {
+	 text-align: center;
+	  }
+	
+	
+   </style>
+</head>
+<body>
+   <h1>Form Registrasi Account TCPNS</h1>
+   <p>Silahkan isi form di Bawah Ini dengan baik dan benar.</p>
+   <hr>
+<form action="">
+ <table>
+  <tr>
+   <td> <label for="name">Name</label></td>
+   <td>:</td>
+   <td><input type="text" name="name"></td>
+  </tr>
+
+ <tr>
+   <td><label for="Email">Email</label></td>
+   <td>:</td>
+   <td><input type="Email" email="Email"></td>
+  </tr>
+
+ <tr>
+   <td><label for="Password">Password</label></td>
+   <td>:</td>
+   <td><input type="Password" Password="Password"></td>
+  </tr>
+
+ <tr>
+    <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+    <td>:</td>
+    <td class="jenis-kelamin">
+	<select name="jenis_kelamin">
+	  <option value="none">Pilih Jenis Kelamin</option>
+	  <option value="Laki_laki">Laki_laki</option>
+	  <option value="Perempuan">Perempuan</option>
+	</select>
+    </td>
+    </tr>
+
+   <td><label for="tanggal-lahir">Tanggal Lahir</label></td>
+   <td>:</td>
+   <td class="tanggal-lahir">
+	<select> name="tanggal">
+	<option value="">Tgl:</option>
+	<option >01</option>
+	<option >02</option>
+	<option >03</option>
+	<option >04</option>
+	<option >05</option>
+	</select>
+
+<select> name="Bulan">
+	<option value="">Bulan:</option>
+	<option >Januari</option>
+	<option >Februari</option>
+	<option >Maret</option>
+	<option >April</option>
+	<option >Mei</option>
+	<option >Juni</option>
+	<option >Juli</option>
+	<option >Agustus</option>
+	<option >September</option>
+	<option >Oktober</option>
+	<option >November</option>
+	<option >Desember</option>
+	</select>
+
+<select> name="Tahun">
+	<option value="">Tahun</option>
+	<option >2025</option>
+	<option >2024</option>
+	<option >2023</option>
+	<option >2022</option>
+	</select>
+	</td>
+	</tr>
+
+  <tr>
+	<td class="tombol" colspan="3"><button>kirim</button></td>
+  </tr>
+  </table>
+  </form>
+
+</body>
+</html>
+

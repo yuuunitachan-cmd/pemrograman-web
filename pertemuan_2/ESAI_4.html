@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>esai no 4</title>
+	<style>
+  hr {
+    border: none;
+    border-top: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+</style>
+
+</head>
+<body>
+<hr>
+<form action="">
+<table>
+  <tr>
+    <td>Nama</td>
+    <td><input type="text" name="nama" size="16%"></td>
+  </tr>
+  <tr>
+    <td>Alamat</td>
+    <td><input type="text" name="alamat" size="30%"></td>
+  </tr>
+  <tr>
+    <td>Kota</td>
+    <td><input type="text" name="kota" size="18%"></td>
+  </tr>
+  <tr>
+    <td>Telp</td>
+    <td><input type="text" name="telp" size="14%"></td>
+  </tr>
+
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+          <input type="radio" name="jk" value="Pria" id="pria">
+          <label for="pria">Pria</label>
+          <input type="radio" name="jk" value="Wanita" id="wanita">
+          <label for="wanita">Wanita</label>
+        </td>
+      </tr>
+
+  <tr>
+   <td>Hoby</td>
+        <td>
+          <input type="checkbox" name="hoby[]" value="Musik" id="musik">
+          <label for="musik">Musik</label>
+          <input type="checkbox" name="hoby[]" value="Olahraga" id="olahraga">
+          <label for="olahraga">Olahraga</label>
+          <input type="checkbox" name="hoby[]" value="Jalan" id="jalan">
+          <label for="jalan">Jalan</label>
+        </td>
+    <tr>
+    <td>Agama</td>
+    <td>
+      <select name="agama">
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Budha">Budha</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Asal Sekolah</td>
+    <td><input type="text" name="asal_sekolah" size="35%"></td>
+  </tr>
+  <tr>
+    <td>Jurusan</td>
+    <td><input type="text" name="jurusan"size="20%"></td>
+  </tr>
+
+</table>	
+<tr>
+  <button type="submit">Kirim</button>
+  <button type="reset">Reset</button>
+</tr>
+<hr>
+</form>
+</body>
+</html>
