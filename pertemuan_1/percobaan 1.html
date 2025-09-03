@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Huruf Jepang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #4CAF50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 4px solid #4CAF50;
+        }
+        
+        .char-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .char-table th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .char-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        
+        .char-table td:hover {
+            background-color: #e8f5e8;
+        }
+        
+        .japanese-char {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2196F3;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .romaji {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .basic-chars {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 2px;
+            margin-bottom: 30px;
+        }
+        
+        .char-cell {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background: #fafafa;
+        }
+        
+        .char-cell:hover {
+            background: #e8f5e8;
+        }
+        
+        .char-cell .japanese-char {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+        
+        .char-cell .romaji {
+            font-size: 12px;
+        }
+        
+        .dakuten-section {
+            margin-top: 30px;
+        }
+        
+        .dakuten-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2px;
+            margin-bottom: 20px;
+        }
+        
+        .row-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+            grid-column: 1 / -1;
+        }
+        
+        @media (max-width: 768px) {
+            .basic-chars {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .dakuten-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .char-cell .japanese-char {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yokoso yuki~~</h1>
+        
+        <!-- HIRAGANA SECTION -->
+        <div class="section">
+            <h2>Hiragana (ひらがな)</h2>
+            
+            <h3>Huruf Dasar</h3>
+            <div class="basic-chars" id="hiragana-basic"></div>
+            
+            <div class="dakuten-section">
+                <h3>Huruf dengan Dakuten (゛) dan Handakuten (゜)</h3>
+                
+                <div class="dakuten-grid" style="grid-template-columns: repeat(5, 1fr);">
+                    <div class="char-cell"><span class="japanese-char">が</span><span class="romaji">ga</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぎ</span><span class="romaji">gi</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぐ</span><span class="romaji">gu</span></div>
+                    <div class="char-cell"><span class="japanese-char">げ</span><span class="romaji">ge</span></div>
+                    <div class="char-cell"><span class="japanese-char">ご</span><span class="romaji">go</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">ざ</span><span class="romaji">za</span></div>
+                    <div class="char-cell"><span class="japanese-char">じ</span><span class="romaji">ji</span></div>
+                    <div class="char-cell"><span class="japanese-char">ず</span><span class="romaji">zu</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぜ</span><span class="romaji">ze</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぞ</span><span class="romaji">zo</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">だ</span><span class="romaji">da</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぢ</span><span class="romaji">ji</span></div>
+                    <div class="char-cell"><span class="japanese-char">づ</span><span class="romaji">zu</span></div>
+                    <div class="char-cell"><span class="japanese-char">で</span><span class="romaji">de</span></div>
+                    <div class="char-cell"><span class="japanese-char">ど</span><span class="romaji">do</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">ば</span><span class="romaji">ba</span></div>
+                    <div class="char-cell"><span class="japanese-char">び</span><span class="romaji">bi</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぶ</span><span class="romaji">bu</span></div>
+                    <div class="char-cell"><span class="japanese-char">べ</span><span class="romaji">be</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぼ</span><span class="romaji">bo</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">ぱ</span><span class="romaji">pa</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぴ</span><span class="romaji">pi</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぷ</span><span class="romaji">pu</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぺ</span><span class="romaji">pe</span></div>
+                    <div class="char-cell"><span class="japanese-char">ぽ</span><span class="romaji">po</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- KATAKANA SECTION -->
+        <div class="section">
+            <h2>Katakana (カタカナ)</h2>
+            
+            <h3>Huruf Dasar</h3>
+            <div class="basic-chars" id="katakana-basic"></div>
+            
+            <div class="dakuten-section">
+                <h3>Huruf dengan Dakuten (゛) dan Handakuten (゜)</h3>
+                
+                <div class="dakuten-grid" style="grid-template-columns: repeat(5, 1fr);">
+                    <div class="char-cell"><span class="japanese-char">ガ</span><span class="romaji">ga</span></div>
+                    <div class="char-cell"><span class="japanese-char">ギ</span><span class="romaji">gi</span></div>
+                    <div class="char-cell"><span class="japanese-char">グ</span><span class="romaji">gu</span></div>
+                    <div class="char-cell"><span class="japanese-char">ゲ</span><span class="romaji">ge</span></div>
+                    <div class="char-cell"><span class="japanese-char">ゴ</span><span class="romaji">go</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">ザ</span><span class="romaji">za</span></div>
+                    <div class="char-cell"><span class="japanese-char">ジ</span><span class="romaji">ji</span></div>
+                    <div class="char-cell"><span class="japanese-char">ズ</span><span class="romaji">zu</span></div>
+                    <div class="char-cell"><span class="japanese-char">ゼ</span><span class="romaji">ze</span></div>
+                    <div class="char-cell"><span class="japanese-char">ゾ</span><span class="romaji">zo</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">ダ</span><span class="romaji">da</span></div>
+                    <div class="char-cell"><span class="japanese-char">ヂ</span><span class="romaji">ji</span></div>
+                    <div class="char-cell"><span class="japanese-char">ヅ</span><span class="romaji">zu</span></div>
+                    <div class="char-cell"><span class="japanese-char">デ</span><span class="romaji">de</span></div>
+                    <div class="char-cell"><span class="japanese-char">ド</span><span class="romaji">do</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">バ</span><span class="romaji">ba</span></div>
+                    <div class="char-cell"><span class="japanese-char">ビ</span><span class="romaji">bi</span></div>
+                    <div class="char-cell"><span class="japanese-char">ブ</span><span class="romaji">bu</span></div>
+                    <div class="char-cell"><span class="japanese-char">ベ</span><span class="romaji">be</span></div>
+                    <div class="char-cell"><span class="japanese-char">ボ</span><span class="romaji">bo</span></div>
+                    
+                    <div class="char-cell"><span class="japanese-char">パ</span><span class="romaji">pa</span></div>
+                    <div class="char-cell"><span class="japanese-char">ピ</span><span class="romaji">pi</span></div>
+                    <div class="char-cell"><span class="japanese-char">プ</span><span class="romaji">pu</span></div>
+                    <div class="char-cell"><span class="japanese-char">ペ</span><span class="romaji">pe</span></div>
+                    <div class="char-cell"><span class="japanese-char">ポ</span><span class="romaji">po</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data huruf dasar
+        const hiraganaBasic = [
+            'あ/a', 'い/i', 'う/u', 'え/e', 'お/o',
+            'か/ka', 'き/ki', 'く/ku', 'け/ke', 'こ/ko',
+            'さ/sa', 'し/shi', 'す/su', 'せ/se', 'そ/so',
+            'た/ta', 'ち/chi', 'つ/tsu', 'て/te', 'と/to',
+            'な/na', 'に/ni', 'ぬ/nu', 'ね/ne', 'の/no',
+            'は/ha', 'ひ/hi', 'ふ/fu', 'へ/he', 'ほ/ho',
+            'ま/ma', 'み/mi', 'む/mu', 'め/me', 'も/mo',
+            'や/ya', '', 'ゆ/yu', '', 'よ/yo',
+            'ら/ra', 'り/ri', 'る/ru', 'れ/re', 'ろ/ro',
+            'わ/wa', '', '', '', 'ん/n'
+        ];
+        
+        const katakanaBasic = [
+            'ア/a', 'イ/i', 'ウ/u', 'エ/e', 'オ/o',
+            'カ/ka', 'キ/ki', 'ク/ku', 'ケ/ke', 'コ/ko',
+            'サ/sa', 'シ/shi', 'ス/su', 'セ/se', 'ソ/so',
+            'タ/ta', 'チ/chi', 'ツ/tsu', 'テ/te', 'ト/to',
+            'ナ/na', 'ニ/ni', 'ヌ/nu', 'ネ/ne', 'ノ/no',
+            'ハ/ha', 'ヒ/hi', 'フ/fu', 'ヘ/he', 'ホ/ho',
+            'マ/ma', 'ミ/mi', 'ム/mu', 'メ/me', 'モ/mo',
+            'ヤ/ya', '', 'ユ/yu', '', 'ヨ/yo',
+            'ラ/ra', 'リ/ri', 'ル/ru', 'レ/re', 'ロ/ro',
+            'ワ/wa', '', '', '', 'ン/n'
+        ];
+        
+        // Fungsi untuk membuat grid huruf dasar
+        function createBasicGrid(data, containerId) {
+            const container = document.getElementById(containerId);
+            
+            data.forEach(item => {
+                const cell = document.createElement('div');
+                cell.className = 'char-cell';
+                
+                if (item === '') {
+                    cell.style.visibility = 'hidden';
+                } else {
+                    const [char, romaji] = item.split('/');
+                    cell.innerHTML = `
+                        <span class="japanese-char">${char}</span>
+                        <span class="romaji">${romaji}</span>
+                    `;
+                }
+                
+                container.appendChild(cell);
+            });
+        }
+        
+        // Inisialisasi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            createBasicGrid(hiraganaBasic, 'hiragana-basic');
+            createBasicGrid(katakanaBasic, 'katakana-basic');
+        });
+    </script>
+</body>
+</html>
