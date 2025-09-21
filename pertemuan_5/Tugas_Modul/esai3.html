@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f8fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .calculator-display {
+            grid-column: span 4;
+            padding: 15px;
+            background-color: #eee;
+            text-align: right;
+            font-size: 1.8em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            min-height: 30px;
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .calculator-zero {
+            grid-column: span 2;
+        }
+        .calculator-button {
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .calculator-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .calculator-button:active {
+            transform: translateY(0);
+        }
+        .number {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .number:hover {
+            background-color: #dcdcdc;
+        }
+        .operator {
+            background-color: #3498db;
+            color: white;
+        }
+        .operator:hover {
+            background-color: #2980b9;
+        }
+        .equals {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .equals:hover {
+            background-color: #27ae60;
+        }
+        .clear, .delete {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .clear:hover, .delete:hover {
+            background-color: #c0392b;
+        }
+        .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eaf2f8;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Sederhana</h1>
+        
+        <div class="calculator">
+            <div class="calculator-display" id="calcDisplay">0</div>
+            
+            <button class="calculator-button clear" onclick="clearDisplay()">C</button>
+            <button class="calculator-button delete" onclick="deleteLast()">⌫</button>
+            <button class="calculator-button operator" onclick="appendToDisplay('/')">/</button>
+            <button class="calculator-button operator" onclick="appendToDisplay('*')">×</button>
+            
+            <button class="calculator-button number" onclick="appendToDisplay('7')">7</button>
+            <button class="calculator-button number" onclick="appendToDisplay('8')">8</button>
+            <button class="calculator-button number" onclick="appendToDisplay('9')">9</button>
+            <button class="calculator-button operator" onclick="appendToDisplay('-')">-</button>
+            
+            <button class="calculator-button number" onclick="appendToDisplay('4')">4</button>
+            <button class="calculator-button number" onclick="appendToDisplay('5')">5</button>
+            <button class="calculator-button number" onclick="appendToDisplay('6')">6</button>
+            <button class="calculator-button operator" onclick="appendToDisplay('+')">+</button>
+            
+            <button class="calculator-button number" onclick="appendToDisplay('1')">1</button>
+            <button class="calculator-button number" onclick="appendToDisplay('2')">2</button>
+            <button class="calculator-button number" onclick="appendToDisplay('3')">3</button>
+            <button class="calculator-button equals" onclick="calculate()">=</button>
+            
+            <button class="calculator-button number calculator-zero" onclick="appendToDisplay('0')">0</button>
+            <button class="calculator-button number" onclick="appendToDisplay('.')">.</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>Cara Penggunaan:</h3>
+            <p>1. Klik tombol angka untuk memasukkan angka</p>
+            <p>2. Klik tombol operator (+, -, ×, /) untuk memilih operasi</p>
+            <p>3. Klik tombol "=" untuk melihat hasil</p>
+            <p>4. Klik tombol "C" untuk menghapus semua</p>
+            <p>5. Klik tombol "⌫" untuk menghapus karakter terakhir</p>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menambahkan nilai ke display
+        function appendToDisplay(value) {
+            const display = document.getElementById('calcDisplay');
+            
+            // Jika display berisi "0" dan nilai yang dimasukkan bukan titik desimal
+            if (display.textContent === '0' && value !== '.') {
+                display.textContent = value;
+            } else {
+                // Cek jika operator berurutan
+                const lastChar = display.textContent.slice(-1);
+                const operators = ['+', '-', '*', '/'];
+                
+                if (operators.includes(lastChar) && operators.includes(value)) {
+                    // Ganti operator terakhir dengan operator baru
+                    display.textContent = display.textContent.slice(0, -1) + value;
+                } else {
+                    display.textContent += value;
+                }
+            }
+        }
+        
+        // Fungsi untuk menghapus display
+        function clearDisplay() {
+            document.getElementById('calcDisplay').textContent = '0';
+        }
+        
+        // Fungsi untuk menghapus karakter terakhir
+        function deleteLast() {
+            const display = document.getElementById('calcDisplay');
+            if (display.textContent.length > 1) {
+                display.textContent = display.textContent.slice(0, -1);
+            } else {
+                display.textContent = '0';
+            }
+        }
+        
+        // Fungsi untuk melakukan perhitungan
+        function calculate() {
+            const display = document.getElementById('calcDisplay');
+            try {
+                // Mengganti simbol × dengan * untuk evaluasi
+                const expression = display.textContent.replace('×', '*');
+                const result = eval(expression);
+                
+                // Menampilkan hasil dengan format yang rapi
+                if (Number.isInteger(result)) {
+                    display.textContent = result;
+                } else {
+                    display.textContent = result.toFixed(6).replace(/\.?0+$/, "");
+                }
+            } catch (error) {
+                display.textContent = 'Error';
+                setTimeout(() => {
+                    display.textContent = '0';
+                }, 1500);
+            }
+        }
+        
+        // Tambahkan event listener untuk keyboard support
+        document.addEventListener('keydown', function(event) {
+            if (event.key >= '0' && event.key <= '9') {
+                appendToDisplay(event.key);
+            } else if (['+', '-', '*', '/'].includes(event.key)) {
+                appendToDisplay(event.key);
+            } else if (event.key === '.') {
+                appendToDisplay('.');
+            } else if (event.key === 'Enter' || event.key === '=') {
+                calculate();
+            } else if (event.key === 'Escape') {
+                clearDisplay();
+            } else if (event.key === 'Backspace') {
+                deleteLast();
+            }
+        });
+    </script>
+</body>
+</html>

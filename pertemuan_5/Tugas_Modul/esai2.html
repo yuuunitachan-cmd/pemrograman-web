@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data dalam Array JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+            flex: 1;
+            min-width: 200px;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .result {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+        }
+        .result h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        pre {
+            background-color: #2d3436;
+            color: #dfe6e9;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        .array-item {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #e8f4fc;
+            border-radius: 4px;
+            border-left: 3px solid #3498db;
+        }
+        .explanation {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #e8f4fc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tipe Data dalam Array JavaScript</h1>
+        
+        <div class="button-group">
+            <button onclick="createArray()">Buat Array Campuran</button>
+            <button onclick="showArrayTypes()">Tampilkan Tipe Data</button>
+            <button onclick="accessArrayElements()">Akses Elemen Array</button>
+        </div>
+        
+        <div class="result">
+            <h2>Hasil:</h2>
+            <div id="arrayResult">Array dan tipe data akan ditampilkan di sini</div>
+        </div>
+
+        <div class="explanation">
+            <h2>Penjelasan:</h2>
+            <p>Array dalam JavaScript dapat menyimpan berbagai jenis tipe data, termasuk:</p>
+            <ul>
+                <li><strong>Number</strong> - angka (contoh: 42, 3.14)</li>
+                <li><strong>String</strong> - teks (contoh: "Hello World")</li>
+                <li><strong>Boolean</strong> - nilai kebenaran (true/false)</li>
+                <li><strong>Null</strong> - nilai kosong yang disengaja</li>
+                <li><strong>Undefined</strong> - variabel yang belum diberi nilai</li>
+                <li><strong>Object</strong> - kumpulan properti dan nilai</li>
+                <li><strong>Array</strong> - kumpulan nilai (array dalam array)</li>
+                <li><strong>Function</strong> - blok kode yang dapat dipanggil</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // 2. Tipe Data dalam Array
+        let mixedArray = [];
+        
+        function createArray() {
+            mixedArray = [
+                42,                     // Number
+                "Hello World",          // String
+                true,                   // Boolean
+                null,                   // Null
+                undefined,              // Undefined
+                {name: "yuki", age:19}, // Object
+                [1, 2, 3],              // Array
+                function() { return "Saya adalah fungsi"; } // Function
+            ];
+            
+            let arrayContent = "<h3>Array yang dibuat:</h3>";
+            mixedArray.forEach((item, index) => {
+                arrayContent += `
+                    <div class="array-item">
+                        <strong>[${index}]</strong>: ${item} <em>(${typeof item})</em>
+                    </div>`;
+            });
+            
+            document.getElementById('arrayResult').innerHTML = arrayContent;
+        }
+        
+        function showArrayTypes() {
+            if (mixedArray.length === 0) {
+                document.getElementById('arrayResult').innerHTML = 
+                    "<p>Array belum dibuat. Silakan klik 'Buat Array Campuran' terlebih dahulu.</p>";
+                return;
+            }
+            
+            let typeCount = {};
+            mixedArray.forEach(item => {
+                const type = typeof item;
+                typeCount[type] = (typeCount[type] || 0) + 1;
+            });
+            
+            let typeInfo = "<h3>Jumlah setiap tipe data dalam array:</h3>";
+            for (const type in typeCount) {
+                typeInfo += `<p><strong>${type}</strong>: ${typeCount[type]}</p>`;
+            }
+            
+            document.getElementById('arrayResult').innerHTML = typeInfo;
+        }
+        
+        function accessArrayElements() {
+            if (mixedArray.length === 0) {
+                document.getElementById('arrayResult').innerHTML = 
+                    "<p>Array belum dibuat. Silakan klik 'Buat Array Campuran' terlebih dahulu.</p>";
+                return;
+            }
+            
+            let accessInfo = "<h3>Mengakses elemen array:</h3>";
+            accessInfo += `<p>Elemen pertama (index 0): <strong>${mixedArray[0]}</strong> <em>(${typeof mixedArray[0]})</em></p>`;
+            accessInfo += `<p>Elemen kedua (index 1): <strong>${mixedArray[1]}</strong> <em>(${typeof mixedArray[1]})</em></p>`;
+            accessInfo += `<p>Elemen kelima (index 4): <strong>${mixedArray[4]}</strong> <em>(${typeof mixedArray[4]})</em></p>`;
+            accessInfo += `<p>Panjang array: <strong>${mixedArray.length}</strong></p>`;
+            
+            document.getElementById('arrayResult').innerHTML = accessInfo;
+        }
+        
+    </script>
+</body>
+</html>

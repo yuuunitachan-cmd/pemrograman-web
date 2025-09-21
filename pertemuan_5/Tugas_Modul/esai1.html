@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Array JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f5fe;
+            border-radius: 5px;
+        }
+        .item {
+            padding: 8px;
+            margin: 5px 0;
+            background: #d6eaf8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Belajar Array JavaScript</h1>
+        
+        <div>
+            <button onclick="buatArray()">Buat Array</button>
+            <button onclick="lihatArray()">Lihat Isi Array</button>
+            <button onclick="lihatTipeData()">Lihat Tipe Data</button>
+        </div>
+        
+        <div class="output" id="hasil">
+            Klik tombol di atas untuk mulai
+        </div>
+    </div>
+
+    <script>
+        // Array kosong
+        let myArray = [];
+        
+        function buatArray() {
+            // Isi array dengan berbagai tipe data
+            myArray = [
+                100,                            // Number
+                "Hello JavaScript",             // String
+                true,                           // Boolean
+                null,                           // Null
+                undefined,                      // Undefined
+                {nama: "John", umur: 20},       // Object
+                [1, 2, 3],                      // Array dalam array
+                function() {                    // Function
+                    return "Ini fungsi dalam array";
+                }
+            ];
+            
+            // Langsung tampilkan isi array setelah dibuat
+            let hasil = '<h3>✅ Array berhasil dibuat!</h3>';
+            hasil += '<h3>Isi Array:</h3>';
+            
+            myArray.forEach((item, index) => {
+                hasil += `
+                    <div class="item">
+                        <strong>Index ${index}:</strong> ${item}
+                    </div>
+                `;
+            });
+            
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+        
+        function lihatArray() {
+            if (myArray.length === 0) {
+                document.getElementById('hasil').innerHTML = 
+                    '<p>❌ Array masih kosong. Klik "Buat Array" dulu!</p>';
+                return;
+            }
+            
+            let hasil = '<h3>Isi Array:</h3>';
+            myArray.forEach((item, index) => {
+                hasil += `
+                    <div class="item">
+                        <strong>Index ${index}:</strong> ${item}
+                    </div>
+                `;
+            });
+            
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+        
+        function lihatTipeData() {
+            if (myArray.length === 0) {
+                document.getElementById('hasil').innerHTML = 
+                    '<p>❌ Array masih kosong. Klik "Buat Array" dulu!</p>';
+                return;
+            }
+            
+            let hasil = '<h3>Tipe Data dalam Array:</h3>';
+            myArray.forEach((item, index) => {
+                hasil += `
+                    <div class="item">
+                        <strong>Index ${index}:</strong> ${item} 
+                        <em>(Tipe: ${typeof item})</em>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+    </script>
+</body>
+</html>
