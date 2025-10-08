@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRITAMA - PT. Triputra Gowata Mandiri | Kontraktor Listrik Terpercaya</title>
+    <meta name="description" content="PT. Triputra Gowata Mandiri (TRITAMA) - Kontraktor listrik terpercaya Indonesia Timur dengan sertifikat ISO, layanan listrik distribusi, instalasi, dan inspeksi.">
+    <meta name="keywords" content="kontraktor listrik, listrik Makassar, instalasi listrik, listrik distribusi, TRITAMA">
+    <meta name="author" content="PT. Triputra Gowata Mandiri">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="TRITAMA - Kontraktor Listrik Terpercaya">
+    <meta property="og:description" content="Kontraktor listrik bersertifikat ISO untuk Indonesia Timur">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'electric-blue': '#1e40af',
+                        'electric-orange': '#f59e0b',
+                        'dark-blue': '#1e3a8a',
+                        'light-blue': '#dbeafe',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+                        'slide-in': 'slide-in 0.8s ease-out',
+                        'fade-in': 'fade-in 0.8s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'typewriter': 'typewriter 2s steps(11) 1s 1 normal both',
+                        'blink': 'blink 1s steps(2) infinite',
+                        'gradient': 'gradient 3s ease infinite',
+                        'shake': 'shake 0.5s ease-in-out',
+                        'zoom-in': 'zoom-in 0.5s ease-out',
+                        'slide-up': 'slide-up 0.8s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        @keyframes pulse-glow {
+            0% { 
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+                transform: scale(1);
+            }
+            100% { 
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3);
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes slide-in {
+            0% { opacity: 0; transform: translateY(50px) scale(0.9); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+        
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink {
+            0%, 100% { border-color: transparent; }
+            50% { border-color: #f59e0b; }
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        @keyframes zoom-in {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        @keyframes slide-up {
+            0% { transform: translateY(100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #f59e0b 50%, #1e40af 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease infinite;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .electric-glow {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .electric-glow:hover {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.8), 0 0 40px rgba(245, 158, 11, 0.3);
+            transform: translateY(-5px) scale(1.02);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-12px) rotateX(5deg) scale(1.03);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .typewriter-container {
+            overflow: hidden;
+            border-right: 3px solid #f59e0b;
+            white-space: nowrap;
+            animation: typewriter 2s steps(11) 1s 1 normal both, blink 1s steps(2) infinite;
+        }
+        
+        .stagger-animation > * {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .magnetic-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .magnetic-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #1e40af 0%, #f59e0b 100%);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #1e3a8a 0%, #d97706 100%);
+        }
+        
+        /* Loading animation */
+        .loading-bar {
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #1e40af, #f59e0b);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            transition: width 0.3s ease;
+        }
+
+        /* =========================== */
+        /* BACKGROUND IMAGES SYSTEM */
+        /* =========================== */
+        .section-bg {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .section-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .section-bg > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Specific Background Images - SUDAH ADA */
+        #beranda { 
+            background-image: url('images/hero-bg.jpg'); 
+        }
+        #beranda::before { 
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #tentang { 
+            background-image: url('images/about-bg.jpg'); 
+        }
+
+        #layanan { 
+            background-image: url('images/services-bg.jpg'); 
+        }
+
+        #galeri { 
+            background-image: url('images/gallery-bg.jpg'); 
+        }
+
+        #sertifikat { 
+            background-image: url('images/certifications-bg.jpg'); 
+        }
+
+        #struktur { 
+            background-image: url('images/struktur.png'); 
+        }
+
+        #kontak { 
+            background-image: url('images/contact-bg.jpg'); 
+        }
+        #kontak::before { 
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* PERBAIKAN: Text colors untuk cards di section dengan background */
+        .section-bg .bg-white .text-gray-800,
+        .section-bg .bg-white .text-gray-700,
+        .section-bg .bg-white .text-gray-900 {
+            color: #1f2937 !important;
+            text-shadow: none !important;
+        }
+
+        .section-bg .bg-white .text-gray-600 {
+            color: #4b5563 !important;
+            text-shadow: none !important;
+        }
+
+        .section-bg .bg-white .text-gray-500 {
+            color: #6b7280 !important;
+            text-shadow: none !important;
+        }
+
+        /* Text colors for dark backgrounds */
+        .section-bg .text-gray-800,
+        .section-bg .text-gray-700,
+        .section-bg .text-gray-900 {
+            color: rgba(255, 255, 255, 0.9) !important;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .section-bg .text-gray-600 {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        .section-bg .text-gray-500 {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        /* Card backgrounds */
+        .section-bg .bg-white {
+            background: rgba(255,255,255,0.95) !important;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            .section-bg {
+                background-attachment: scroll;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem !important;
+            }
+            
+            .mobile-stats {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        /* Floating shapes animation */
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+
+        /* Notification System */
+        .notification {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            padding: 16px 20px;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            z-index: 10000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+        
+        .notification.error {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+        
+        .notification.info {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+
+        /* Browser fallbacks */
+        @supports not (backdrop-filter: blur(10px)) {
+            .glass-effect {
+                background: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        /* =========================== */
+/* RESPONSIVE FIXES - LENGKAP */
+/* =========================== */
+
+/* Mobile First Approach */
+@media (max-width: 640px) {
+    /* Hero Section Mobile Fix */
+    .hero-title {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    /* Text Size Adjustments */
+    .text-5xl, .text-6xl, .text-7xl {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .text-4xl {
+        font-size: 2rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.75rem !important;
+    }
+    
+    .text-2xl {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Section Spacing */
+    .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .py-12 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    /* Navigation Height */
+    .h-20 {
+        height: 4rem !important;
+    }
+    
+    /* Logo Size */
+    .w-12 {
+        width: 2.5rem !important;
+    }
+    .h-12 {
+        height: 2.5rem !important;
+    }
+    
+    /* Button Sizes */
+    .px-8 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .py-4 {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+    
+    /* Grid Layouts - Force Single Column */
+    .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Stats Grid */
+    .mobile-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    /* Card Padding */
+    .p-8 {
+        padding: 1.5rem !important;
+    }
+    
+    .p-6 {
+        padding: 1rem !important;
+    }
+    
+    /* Prevent Image Overflow */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Form Elements - Prevent Zoom */
+    input, select, textarea {
+        font-size: 16px !important;
+        min-height: 44px !important;
+    }
+    
+    /* Floating WhatsApp Button */
+    .fixed.bottom-6.right-6 {
+        bottom: 5rem !important;
+        right: 1rem !important;
+    }
+    
+    /* Back to Top Button */
+    #backToTop {
+        bottom: 9rem !important;
+        right: 1rem !important;
+    }
+}
+
+/* Tablet Optimization */
+@media (min-width: 641px) and (max-width: 768px) {
+    .text-7xl {
+        font-size: 3.5rem !important;
+    }
+    
+    .text-5xl {
+        font-size: 2.75rem !important;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .text-4xl {
+        font-size: 1.75rem !important;
+    }
+    
+    .mobile-stats {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .px-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    .min-h-screen {
+        min-height: -webkit-fill-available !important;
+    }
+    
+    input, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Fix for Android Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+    </style>
+</head>
+<body class="bg-white font-inter">
+    <!-- Loading Bar -->
+    <div class="loading-bar" id="loadingBar"></div>
+
+    <!-- Notification System -->
+    <div class="notification hidden" id="notification"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg transition-all duration-500" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo dengan animasi - DIHAPUS ANIMASI BERLEBIHAN -->
+                <div class="flex items-center space-x-3 group cursor-pointer" onclick="scrollToTop()">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold gradient-text">TRITAMA</div>
+                        <div class="text-xs text-gray-600">PT. Triputra Gowata Mandiri</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#beranda" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Beranda</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="#tentang" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Tentang</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="#layanan" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Layanan</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="projects.html" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Proyek</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="certifications.html" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Sertifikat</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="#struktur" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Struktur</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="index.html#kontak" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Kontak</span>
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+<div class="hidden lg:block">
+    <a href="index.html#kontak" class="magnetic-btn bg-gradient-to-r from-electric-orange to-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 electric-glow">
+        <i class="fas fa-phone mr-2"></i>Konsultasi
+    </a>
+</div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-600 hover:text-electric-blue transition-colors duration-300" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden bg-white/95 backdrop-blur-md border-t shadow-xl hidden animate-slide-up">
+            <div class="px-4 py-6 space-y-2">
+                <a href="#beranda" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium" onclick="toggleMobileMenu()">
+                    <i class="fas fa-home mr-3"></i>Beranda
+                </a>
+                <a href="#tentang" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium" onclick="toggleMobileMenu()">
+                    <i class="fas fa-building mr-3"></i>Tentang
+                </a>
+                <a href="#layanan" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium" onclick="toggleMobileMenu()">
+                    <i class="fas fa-tools mr-3"></i>Layanan
+                </a>
+                <a href="projects.html" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium" onclick="toggleMobileMenu()">
+                    <i class="fas fa-project-diagram mr-3"></i>Proyek
+                </a>
+                <a href="certifications.html" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium" onclick="toggleMobileMenu()">
+                    <i class="fas fa-certificate mr-3"></i>Sertifikat
+                </a>
+                <a href="#struktur" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium" onclick="toggleMobileMenu()">
+                    <i class="fas fa-sitemap mr-3"></i>Struktur
+                </a>
+                <a href="contact.html" class="block bg-gradient-to-r from-electric-orange to-orange-600 text-white text-center py-3 px-4 rounded-xl font-semibold mt-4 hover:shadow-lg transition-all duration-300" onclick="toggleMobileMenu()">
+                    <i class="fas fa-phone mr-2"></i>Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section dengan Background Image -->
+    <section id="beranda" class="pt-20 min-h-screen section-bg text-white flex items-center relative overflow-hidden">
+        <!-- Animated Background Shapes -->
+        <div class="floating-shapes">
+            <div class="floating-shape w-20 h-20 bg-electric-orange/20 top-1/4 left-10" style="animation-delay: 0s;"></div>
+            <div class="floating-shape w-16 h-16 bg-white/20 top-3/4 right-20" style="animation-delay: -2s; animation-duration: 20s;"></div>
+            <div class="floating-shape w-12 h-12 bg-electric-orange/30 top-1/2 left-1/3" style="animation-delay: -5s; animation-duration: 25s;"></div>
+            <div class="floating-shape w-24 h-24 bg-white/10 bottom-20 left-1/4" style="animation-delay: -7s; animation-duration: 18s;"></div>
+        </div>
+
+        <!-- Circuit Board Animation -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full">
+                <svg viewBox="0 0 100 100" class="w-full h-full">
+                    <path d="M0,50 L100,50" stroke="white" stroke-width="0.5" stroke-dasharray="5,5" class="animate-pulse"></path>
+                    <path d="M50,0 L50,100" stroke="white" stroke-width="0.5" stroke-dasharray="5,5" class="animate-pulse" style="animation-delay: 1s;"></path>
+                    <circle cx="20" cy="20" r="2" fill="white" class="animate-ping" style="animation-delay: 0.5s;"></circle>
+                    <circle cx="80" cy="80" r="2" fill="white" class="animate-ping" style="animation-delay: 1.5s;"></circle>
+                </svg>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 animate-slide-in">
+                    <div class="space-y-6">
+                        <!-- Animated Badge -->
+                        <div class="inline-flex items-center px-4 py-2 bg-electric-orange/20 backdrop-blur-sm rounded-full text-electric-orange border border-electric-orange/30 animate-pulse-glow">
+                            <i class="fas fa-certificate mr-2 animate-spin-slow"></i>
+                            Kontraktor Listrik Bersertifikat ISO
+                        </div>
+                        
+                        <!-- Animated Heading -->
+<h1 class="text-4xl md:text-5xl lg:text-7xl font-black leading-tight text-shadow hero-title">
+    <span class="gradient-text block">TRITAMA</span>
+    <span class="block text-xl md:text-2xl lg:text-4xl text-blue-200 mt-4 md:mt-6 typewriter-container">
+        SOLUSI KELISTRIKANMU
+    </span>
+</h1>
+                        
+                        <!-- Animated Description -->
+                        <p class="text-xl text-blue-100 max-w-2xl leading-relaxed animate-fade-in" style="animation-delay: 1.5s;">
+                            Kontraktor listrik terpercaya Indonesia Timur dengan standar ISO, teknologi modern, dan tenaga profesional bersertifikat untuk semua kebutuhan kelistrikan Anda.
+                        </p>
+                    </div>
+                    
+                    <!-- Animated CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 animate-fade-in" style="animation-delay: 2s;">
+                        <a href="contact.html" class="magnetic-btn group bg-gradient-to-r from-electric-orange to-yellow-500 hover:from-electric-orange hover:to-orange-600 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-105 electric-glow">
+                            <i class="fas fa-phone-alt group-hover:animate-bounce"></i>
+                            Konsultasi Gratis
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform duration-300"></i>
+                        </a>
+                        <a href="projects.html" class="magnetic-btn border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center gap-3 group">
+                            <i class="fas fa-project-diagram group-hover:animate-wiggle"></i>
+                            Lihat Proyek
+                        </a>
+                    </div>
+
+                    <!-- Animated Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 pt-6 md:pt-8 border-t border-blue-600/50 animate-fade-in mobile-stats" style="animation-delay: 2.5s;">
+                        <div class="text-center group">
+                            <div class="text-4xl font-black group-hover:scale-110 transition-transform duration-300 animate-bounce-slow">4+</div>
+                            <div class="text-blue-200 text-sm mt-2">Tahun Pengalaman</div>
+                        </div>
+                        <div class="text-center group">
+                            <div class="text-4xl font-black group-hover:scale-110 transition-transform duration-300 animate-bounce-slow" style="animation-delay: 0.2s;">50+</div>
+                            <div class="text-blue-200 text-sm mt-2">Project Selesai</div>
+                        </div>
+                        <div class="text-center group">
+                            <div class="text-4xl font-black group-hover:scale-110 transition-transform duration-300 animate-bounce-slow" style="animation-delay: 0.4s;">100%</div>
+                            <div class="text-blue-200 text-sm mt-2">Client Puas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Hero Cards -->
+                <div class="relative animate-zoom-in" style="animation-delay: 1s;">
+                    <div class="relative">
+                        <!-- Floating Cards -->
+                        <div class="absolute -top-6 -left-6 w-full h-full bg-electric-orange/20 rounded-3xl animate-float" style="animation-delay: -1s;"></div>
+                        <div class="absolute -bottom-4 -right-4 w-full h-full bg-white/10 rounded-3xl animate-float" style="animation-delay: -2s;"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative bg-white/10 glass-effect p-8 rounded-2xl shadow-2xl backdrop-blur-lg">
+                            <div class="space-y-6">
+                                <!-- Feature 1 -->
+                                <div class="flex items-center gap-4 group cursor-pointer">
+                                    <div class="w-14 h-14 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-pulse-glow">
+                                        <i class="fas fa-check-circle text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-lg text-white">Bersertifikat ISO</div>
+                                        <div class="text-sm text-blue-200">9001:2015 & 45001:2018</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Feature 2 -->
+                                <div class="flex items-center gap-4 group cursor-pointer">
+                                    <div class="w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-pulse-glow" style="animation-delay: 0.5s;">
+                                        <i class="fas fa-shield-alt text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-lg text-white">K3 Terjamin</div>
+                                        <div class="text-sm text-blue-200">SMK3 & CSMS</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Feature 3 -->
+                                <div class="flex items-center gap-4 group cursor-pointer">
+                                    <div class="w-14 h-14 bg-gradient-to-r from-electric-orange to-orange-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-pulse-glow" style="animation-delay: 1s;">
+                                        <i class="fas fa-users text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-lg text-white">Tenaga Ahli</div>
+                                        <div class="text-sm text-blue-200">Bersertifikat Kompetensi</div>
+                                    </div>
+                                </div>
+
+                                <!-- Feature 4 -->
+                                <div class="flex items-center gap-4 group cursor-pointer">
+                                    <div class="w-14 h-14 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-pulse-glow" style="animation-delay: 1.5s;">
+                                        <i class="fas fa-handshake text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-lg text-white">Mitra PLN</div>
+                                        <div class="text-sm text-blue-200">Kerjasama Resmi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section dengan Background Image -->
+    <section id="tentang" class="py-20 section-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 animate-slide-in">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center px-4 py-2 bg-electric-blue/10 text-electric-blue rounded-full font-semibold animate-fade-in">
+                            <i class="fas fa-building mr-2"></i>
+                            Tentang Perusahaan
+                        </div>
+                        <h2 class="text-5xl font-black text-white mb-4 animate-fade-in" style="animation-delay: 0.3s;">
+                            Tentang 
+                            <span class="gradient-text">TRITAMA</span>
+                        </h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-electric-blue to-electric-orange rounded-full animate-fade-in" style="animation-delay: 0.6s;"></div>
+                        <p class="text-lg text-white leading-relaxed animate-fade-in" style="animation-delay: 0.9s;">
+                            <strong>PT. TRIPUTRA GOWATA MANDIRI (TRITAMA)</strong> didirikan pada tahun 2020 sebagai perusahaan kontraktor listrik Indonesia Timur yang bergerak di bidang jasa pembangunan jaringan listrik distribusi, instalasi pelanggan, penanganan gangguan listrik, inspeksi, pelatihan dan konsultan.
+                        </p>
+                        <p class="text-lg text-white leading-relaxed animate-fade-in" style="animation-delay: 1.2s;">
+                            Layanan listrik yang diberikan oleh TRITAMA sesuai standar kelistrikan Indonesia, melibatkan <span class="text-electric-blue font-bold">tenaga profesional bersertifikat kompetensi (serkom)</span> yang berpengalaman dan kompeten di bidang kelistrikan dengan menerapkan prinsip <span class="text-electric-orange font-bold">K3 (Keselamatan dan Kesehatan Kerja)</span>.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 animate-fade-in stagger-animation" style="animation-delay: 1.5s;">
+                        <div class="bg-white p-6 rounded-2xl shadow-xl card-hover border border-gray-100">
+                            <div class="w-12 h-12 bg-gradient-to-r from-electric-blue to-blue-600 rounded-xl flex items-center justify-center mb-4 animate-pulse-glow">
+                                <i class="fas fa-calendar-alt text-white text-xl"></i>
+                            </div>
+                            <div class="text-3xl font-black text-gray-800 mb-2">2020</div>
+                            <div class="text-gray-600">Tahun Berdiri</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-xl card-hover border border-gray-100">
+                            <div class="w-12 h-12 bg-gradient-to-r from-electric-orange to-orange-600 rounded-xl flex items-center justify-center mb-4 animate-pulse-glow" style="animation-delay: 0.5s;">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div class="text-3xl font-black text-gray-800 mb-2">Makassar</div>
+                            <div class="text-gray-600">Kantor Pusat</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 animate-slide-in" style="animation-delay: 0.5s;">
+                    <!-- PERBAIKAN: Visi Misi Card dengan text hitam -->
+                    <div class="bg-white p-8 rounded-3xl shadow-2xl relative overflow-hidden card-hover border border-gray-200">
+                        <h3 class="text-3xl font-black mb-8 flex items-center gap-3 text-gray-800">
+                            <i class="fas fa-eye text-electric-orange animate-pulse"></i>
+                            Visi & Misi
+                        </h3>
+                        
+                        <div class="space-y-8">
+                            <!-- Visi -->
+                            <div class="relative animate-fade-in" style="animation-delay: 0.3s;">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-8 h-8 bg-electric-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-bounce-slow">
+                                        <i class="fas fa-bullseye text-white text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-2xl font-black mb-3 text-electric-orange">VISI</h4>
+                                        <p class="text-gray-700 leading-relaxed">
+                                            Menjadi perusahaan kontraktor listrik <span class="font-black text-gray-900">terbaik di Indonesia</span> yang terpercaya, profesional, mandiri, unggul dan berdaya saing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Misi -->
+                            <div class="relative animate-fade-in" style="animation-delay: 0.6s;">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-8 h-8 bg-electric-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-bounce-slow" style="animation-delay: 0.5s;">
+                                        <i class="fas fa-rocket text-white text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-2xl font-black mb-4 text-gray-800">MISI</h4>
+                                        <ul class="space-y-3 text-gray-700">
+                                            <li class="flex items-start gap-3 animate-fade-in" style="animation-delay: 0.9s;">
+                                                <i class="fas fa-check-circle text-electric-orange mt-1 flex-shrink-0 animate-pulse"></i>
+                                                <span>Menjalankan bisnis ketenagalistrikan yang berorientasi pada <span class="font-semibold text-gray-900">mutu dan kepuasan klien</span> sebagai mitra kerja</span>
+                                            </li>
+                                            <li class="flex items-start gap-3 animate-fade-in" style="animation-delay: 1.2s;">
+                                                <i class="fas fa-check-circle text-electric-orange mt-1 flex-shrink-0 animate-pulse" style="animation-delay: 0.5s;"></i>
+                                                <span>Menyediakan jasa kelistrikan kepada masyarakat dalam memenuhi keperluan tenaga listrik yang <span class="font-semibold text-gray-900">aman dan handal</span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section dengan Background Image -->
+    <section id="layanan" class="py-20 section-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 animate-fade-in">
+                <div class="inline-flex items-center px-4 py-2 bg-yellow-100 text-yellow-600 rounded-full font-semibold mb-6 animate-pulse-glow">
+                    <i class="fas fa-tools mr-2"></i>
+                    Layanan Profesional
+                </div>
+                <h2 class="text-5xl font-black text-white mb-4 animate-fade-in" style="animation-delay: 0.3s;">
+                    Layanan Kami
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-electric-blue to-electric-orange rounded-full mx-auto mb-8 animate-fade-in" style="animation-delay: 0.6s;"></div>
+                <p class="text-xl text-white max-w-3xl mx-auto animate-fade-in" style="animation-delay: 0.9s;">
+                    Kami menyediakan layanan kelistrikan komprehensif dengan standar kualitas tinggi dan teknologi terkini
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 dengan animasi -->
+                <div class="group bg-white p-8 rounded-2xl shadow-lg card-hover border border-gray-100 relative overflow-hidden animate-slide-up">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric-blue to-blue-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-wiggle transition-all duration-300">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4 group-hover:text-electric-blue transition-colors duration-300">Listrik Distribusi</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Pembangunan konstruksi jaringan listrik distribusi tegangan menengah, tegangan rendah, konstruksi gardu trafo dan pemasangan alat pengukur.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2 animate-fade-in" style="animation-delay: 0.1s;">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow"></i>
+                            <span class="text-sm">Tegangan Menengah & Rendah</span>
+                        </li>
+                        <li class="flex items-center gap-2 animate-fade-in" style="animation-delay: 0.2s;">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow" style="animation-delay: 0.3s;"></i>
+                            <span class="text-sm">Gardu Trafo</span>
+                        </li>
+                        <li class="flex items-center gap-2 animate-fade-in" style="animation-delay: 0.3s;">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow" style="animation-delay: 0.6s;"></i>
+                            <span class="text-sm">Alat Pengukur</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-white p-8 rounded-2xl shadow-lg card-hover border border-gray-100 relative overflow-hidden animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric-orange to-orange-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-wiggle transition-all duration-300">
+                        <i class="fas fa-wrench text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4 group-hover:text-electric-orange transition-colors duration-300">Listrik Instalasi</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Pemasangan peralatan instalasi listrik gedung/bangunan untuk perumahan, perkantoran, pusat bisnis dan industri.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow"></i>
+                            <span class="text-sm">Perumahan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow" style="animation-delay: 0.3s;"></i>
+                            <span class="text-sm">Perkantoran</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow" style="animation-delay: 0.6s;"></i>
+                            <span class="text-sm">Industri</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-white p-8 rounded-2xl shadow-lg card-hover border border-gray-100 relative overflow-hidden animate-slide-up" style="animation-delay: 0.4s;">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-wiggle transition-all duration-300">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4 group-hover:text-green-600 transition-colors duration-300">Inspeksi Kendala</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Inspeksi instalasi listrik untuk memberikan jaminan keamanan serta keandalan listrik di tempat anda.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow"></i>
+                            <span class="text-sm">Jaminan Keamanan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow" style="animation-delay: 0.3s;"></i>
+                            <span class="text-sm">Keandalan Listrik</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500 text-sm animate-bounce-slow" style="animation-delay: 0.6s;"></i>
+                            <span class="text-sm">Sertifikat Laik</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section dengan Background Image -->
+    <section id="galeri" class="py-20 section-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-2 bg-electric-blue/10 text-electric-blue rounded-full font-semibold mb-6">
+                    <i class="fas fa-images mr-2"></i>
+                    Portfolio Project
+                </div>
+                <h2 class="text-5xl font-bold text-white mb-6">
+                    Galeri <span class="gradient-text">Proyek</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-electric-blue to-electric-orange rounded-full mx-auto mb-8"></div>
+                <p class="text-xl text-white max-w-3xl mx-auto leading-relaxed">
+                    Portfolio proyek kelistrikan yang telah kami selesaikan dengan kualitas terbaik dan kepuasan klien
+                </p>
+            </div>
+
+            <!-- PERBAIKAN: Main Gallery Display dengan text hitam -->
+            <div class="mb-12">
+                <div class="bg-white rounded-3xl p-8 shadow-2xl border border-gray-200">
+                    <div class="grid lg:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="inline-block px-4 py-2 bg-electric-orange text-white text-sm rounded-full mb-4 font-semibold">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                <span id="currentCategory">Penerangan Jalan</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-4" id="currentTitle">
+                                Relokasi Lampu Jalan PJU Belopa dan Belopa Utara
+                            </h3>
+                            <p class="text-gray-600 mb-8 leading-relaxed" id="currentDescription">
+                                Proyek strategis pemasangan dan relokasi sistem penerangan jalan umum menggunakan teknologi LED modern yang hemat energi dan ramah lingkungan. Pekerjaan meliputi instalasi tiang, pemasangan luminaire, dan sistem kontrol otomatis.
+                            </p>
+                            <div class="flex items-center gap-6">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-800 stat-number">150+</div>
+                                    <div class="text-gray-600 text-sm">Titik Lampu</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-800 stat-number">5km</div>
+                                    <div class="text-gray-600 text-sm">Jarak Jalan</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-gray-800 stat-number">LED</div>
+                                    <div class="text-gray-600 text-sm">Teknologi</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 mt-6">
+                                <button onclick="previousProject()" class="p-3 bg-gray-100 hover:bg-gray-200 rounded-xl transition-colors">
+                                    <i class="fas fa-chevron-left text-gray-700"></i>
+                                </button>
+                                <span class="text-sm text-gray-600">
+                                    <span id="currentIndex">1</span> / <span id="totalProjects">3</span>
+                                </span>
+                                <button onclick="nextProject()" class="p-3 bg-gray-100 hover:bg-gray-200 rounded-xl transition-colors">
+                                    <i class="fas fa-chevron-right text-gray-700"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative project-display">
+                            <div class="bg-gray-50 rounded-2xl p-4 border border-gray-200">
+                                <div class="rounded-xl h-80 relative overflow-hidden">
+                                    <img src="images/PJU.jpg" 
+                                         alt="Proyek Penerangan Jalan Umum Belopa" 
+                                         class="w-full h-full object-cover rounded-xl transition-transform duration-500"
+                                         id="mainProjectImage">
+                                    
+                                    <!-- Overlay dengan judul -->
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-xl flex items-end">
+                                        <div class="p-6 text-white">
+                                            <div class="flex items-center gap-3 mb-2">
+                                                <div class="w-10 h-10 bg-electric-orange rounded-full flex items-center justify-center">
+                                                    <i class="fas fa-lightbulb text-white"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="font-bold text-lg" id="projectOverlayTitle">Relokasi Lampu PJU</div>
+                                                    <div class="text-blue-200 text-sm" id="projectOverlayLocation">Belopa & Belopa Utara</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Decorative elements -->
+                                    <div class="absolute top-4 left-4 w-3 h-3 bg-electric-orange rounded-full animate-pulse"></div>
+                                    <div class="absolute bottom-4 right-4 w-2 h-2 bg-electric-blue rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Thumbnails -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card cursor-pointer rounded-2xl overflow-hidden transition-all duration-300 card-hover" onclick="showProject(0)">
+                    <div class="bg-white shadow-xl">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="images/PJU.jpg" alt="Proyek Penerangan Jalan Umum" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-electric-orange text-white px-2 py-1 rounded-full text-xs font-semibold">
+                                PJU
+                            </div>
+                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-expand text-2xl mb-2"></i>
+                                    <div class="text-sm">Klik untuk detail</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">
+                                Relokasi Lampu Jalan PJU Belopa dan Belopa Utara
+                            </h4>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                                Pemasangan dan relokasi sistem penerangan jalan umum dengan teknologi LED modern untuk efisiensi energi
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-electric-blue font-semibold bg-blue-50 px-2 py-1 rounded-full">
+                                    Selesai 2023
+                                </span>
+                                <i class="fas fa-arrow-right text-electric-blue"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card cursor-pointer rounded-2xl overflow-hidden transition-all duration-300 card-hover" onclick="showProject(1)">
+                    <div class="bg-white shadow-xl">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="images/IKR.jpg" alt="Proyek Instalasi Jaringan Telekomunikasi" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                                IKR
+                            </div>
+                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-expand text-2xl mb-2"></i>
+                                    <div class="text-sm">Klik untuk detail</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">
+                                Pekerjaan IKR WiFi
+                            </h4>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                                Instalasi infrastruktur jaringan telekomunikasi dan sistem WiFi untuk area komersial dan residensial
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-green-600 font-semibold bg-green-50 px-2 py-1 rounded-full">
+                                    Selesai 2023
+                                </span>
+                                <i class="fas fa-arrow-right text-green-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card cursor-pointer rounded-2xl overflow-hidden transition-all duration-300 card-hover" onclick="showProject(2)">
+                    <div class="bg-white shadow-xl">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="images/distribusi.jpg" alt="Proyek Instalasi Jaringan Distribusi Listrik" class="w-full h-full object-cover">
+                            <div class="absolute top-4 right-4 bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                                PLN
+                            </div>
+                            <div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-expand text-2xl mb-2"></i>
+                                    <div class="text-sm">Klik untuk detail</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-gray-800 mb-3 text-lg">
+                                Instalasi Jaringan Distribusi
+                            </h4>
+                            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                                Pembangunan jaringan listrik distribusi tegangan menengah dan rendah sesuai standar PLN
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-orange-600 font-semibold bg-orange-50 px-2 py-1 rounded-full">
+                                    Ongoing 2024
+                                </span>
+                                <i class="fas fa-arrow-right text-orange-600"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Statistics -->
+            <div class="mt-16 bg-white rounded-3xl shadow-xl p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Statistik Proyek</h3>
+                    <p class="text-gray-600">Pencapaian kami dalam angka</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-electric-blue to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-project-diagram text-white text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-gray-800 mb-1">50+</div>
+                        <div class="text-gray-600 text-sm">Total Proyek</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-gray-800 mb-1">48+</div>
+                        <div class="text-gray-600 text-sm">Klien Puas</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-electric-orange to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-white text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-gray-800 mb-1">100%</div>
+                        <div class="text-gray-600 text-sm">Tepat Waktu</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-award text-white text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-gray-800 mb-1">Zero</div>
+                        <div class="text-gray-600 text-sm">Kecelakaan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section dengan Background Image -->
+    <section id="sertifikat" class="py-20 section-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <div class="inline-flex items-center px-4 py-2 bg-electric-orange/10 text-electric-orange rounded-full font-semibold mb-6">
+                    <i class="fas fa-award mr-2"></i>
+                    Sertifikat & Akreditasi
+                </div>
+                <h2 class="text-5xl font-black text-white mb-4">Sertifikat <span class="gradient-text">Kami</span></h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-electric-blue to-electric-orange rounded-full mx-auto mb-8"></div>
+            </div>
+
+            <!-- Animated Certification Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <!-- Cert 1 -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg card-hover border border-blue-200 animate-slide-up">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-electric-blue rounded-xl group-hover:animate-wiggle transition-all duration-300">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-800 group-hover:text-electric-blue transition-colors mb-2">
+                                Badan Usaha Jasa Penunjang Tenaga Listrik
+                            </h3>
+                            <p class="text-sm text-gray-600">Dirjen Ketenagalistrikan Kementrian ESDM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg card-hover border border-green-200 animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-green-600 rounded-xl group-hover:animate-wiggle transition-all duration-300">
+                            <i class="fas fa-certificate text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-800 group-hover:text-green-600 transition-colors mb-2">
+                                ISO 9001:2015
+                            </h3>
+                            <p class="text-sm text-gray-600">Sistem Manajemen Mutu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg card-hover border border-orange-200 animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-electric-orange rounded-xl group-hover:animate-wiggle transition-all duration-300">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-800 group-hover:text-electric-orange transition-colors mb-2">
+                                ISO 45001:2018
+                            </h3>
+                            <p class="text-sm text-gray-600">Sistem Manajemen K3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg card-hover border border-red-200 animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-red-600 rounded-xl group-hover:animate-wiggle transition-all duration-300">
+                            <i class="fas fa-hard-hat text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-800 group-hover:text-red-600 transition-colors mb-2">
+                                SMK3
+                            </h3>
+                            <p class="text-sm text-gray-600">Sistem Manajemen Keselamatan dan Kesehatan Kerja</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg card-hover border border-purple-200 animate-slide-up" style="animation-delay: 0.4s;">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-purple-600 rounded-xl group-hover:animate-wiggle transition-all duration-300">
+                            <i class="fas fa-clipboard-check text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-800 group-hover:text-purple-600 transition-colors mb-2">
+                                CSMS
+                            </h3>
+                            <p class="text-sm text-gray-600">Contractor Safety Management System</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 6 -->
+                <div class="group bg-white p-6 rounded-2xl shadow-lg card-hover border border-indigo-200 animate-slide-up" style="animation-delay: 0.5s;">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-indigo-600 rounded-xl group-hover:animate-wiggle transition-all duration-300">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-gray-800 group-hover:text-indigo-600 transition-colors mb-2">
+                                AKLI
+                            </h3>
+                            <p class="text-sm text-gray-600">Asosiasi Kontraktor Listrik Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Section - DIPINDAH SETELAH SERTIFIKAT -->
+    <section id="struktur" class="py-20 section-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 animate-fade-in">
+                <div class="inline-flex items-center px-4 py-2 bg-electric-blue/10 text-electric-blue rounded-full font-semibold mb-6">
+                    <i class="fas fa-sitemap mr-2"></i>
+                    Struktur Organisasi
+                </div>
+                <h2 class="text-5xl font-black text-white mb-4">Tim <span class="gradient-text">Profesional</span> Kami</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-electric-blue to-electric-orange rounded-full mx-auto mb-8"></div>
+                <p class="text-xl text-white max-w-3xl mx-auto animate-fade-in" style="animation-delay: 0.3s;">
+                    Didukung oleh tim ahli yang berpengalaman dan bersertifikat dalam bidang kelistrikan
+                </p>
+            </div>
+
+            <!-- Organizational Chart - CARD TRANSPARAN SEPERTI VISI MISI -->
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 animate-slide-up">
+                <!-- Desktop View - Organizational Chart -->
+                <div class="hidden lg:block">
+                    <!-- Level 1: Direktur -->
+                    <div class="flex justify-center mb-12">
+                        <div class="text-center">
+                            <div class="w-24 h-24 bg-gradient-to-r from-electric-blue to-dark-blue rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-crown text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-black text-2xl text-white mb-2">DIREKTUR</h3>
+                            <p class="text-electric-orange font-bold text-lg">MAWADDAH TRI WULANDARI</p>
+                            <div class="w-16 h-1 bg-electric-orange rounded-full mx-auto mt-3"></div>
+                        </div>
+                    </div>
+
+                    <!-- Level 2: Manager (Horizontal) -->
+                    <div class="flex justify-center mb-8">
+                        <div class="absolute w-1 h-8 bg-gray-400 -mt-8"></div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-8 mb-12">
+                        <!-- Project Manager -->
+                        <div class="text-center group">
+                            <div class="relative">
+                                <div class="w-20 h-20 bg-electric-orange rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-hard-hat text-white text-2xl"></i>
+                                </div>
+                                <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-bolt text-white text-xs"></i>
+                                </div>
+                            </div>
+                            <h4 class="font-black text-lg text-white mb-1">PROJECT MANAGER</h4>
+                            <p class="text-gray-200 font-semibold">HASAN</p>
+                            <p class="text-sm text-gray-300 mt-2">Koordinator Proyek</p>
+                        </div>
+
+                        <!-- Site Manager -->
+                        <div class="text-center group">
+                            <div class="w-20 h-20 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                            </div>
+                            <h4 class="font-black text-lg text-white mb-1">SITE MANAGER</h4>
+                            <p class="text-gray-200 font-semibold">ALFIAN GIFFARI</p>
+                            <p class="text-sm text-gray-300 mt-2">Pengawas Lapangan</p>
+                        </div>
+
+                        <!-- K3 -->
+                        <div class="text-center group">
+                            <div class="w-20 h-20 bg-red-500 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <h4 class="font-black text-lg text-white mb-1">K3</h4>
+                            <p class="text-gray-200 font-semibold">ANSARK</p>
+                            <p class="text-sm text-gray-300 mt-2">Keselamatan & Kesehatan</p>
+                        </div>
+                    </div>
+
+                    <!-- Level 3: Staff (Horizontal) -->
+                    <div class="flex justify-center mb-8">
+                        <div class="absolute w-1 h-8 bg-gray-400 -mt-8"></div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-8 max-w-2xl mx-auto">
+                        <!-- Keuangan -->
+                        <div class="text-center group">
+                            <div class="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-calculator text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-1">KEUANGAN</h4>
+                            <p class="text-gray-200">MUH REZKI AKBAR</p>
+                            <p class="text-xs text-gray-300 mt-1">Manager Keuangan</p>
+                        </div>
+
+                        <!-- Administrasi -->
+                        <div class="text-center group">
+                            <div class="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-file-alt text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-1">ADMINISTRASI</h4>
+                            <p class="text-gray-200">ANGGER DEREN PRATIWI</p>
+                            <p class="text-xs text-gray-300 mt-1">Admin Project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile View - Vertical Timeline -->
+                <div class="lg:hidden space-y-8">
+                    <!-- Direktur -->
+                    <div class="flex items-start gap-4 p-6 bg-white/10 rounded-2xl card-hover border border-white/20">
+                        <div class="w-16 h-16 bg-gradient-to-r from-electric-blue to-dark-blue rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-crown text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-black text-xl text-white mb-1">DIREKTUR</h3>
+                            <p class="text-electric-orange font-bold text-lg">MAWADDAH TRI WULANDARI</p>
+                            <p class="text-sm text-gray-300 mt-2">Pimpinan Perusahaan</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Manager -->
+                    <div class="flex items-start gap-4 p-6 bg-white/10 rounded-2xl card-hover border border-white/20 ml-8">
+                        <div class="w-14 h-14 bg-electric-orange rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-hard-hat text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black text-lg text-white mb-1">PROJECT MANAGER</h4>
+                            <p class="text-gray-200 font-semibold">HASAN</p>
+                            <p class="text-sm text-gray-300">Koordinator Proyek</p>
+                        </div>
+                    </div>
+
+                    <!-- Site Manager -->
+                    <div class="flex items-start gap-4 p-6 bg-white/10 rounded-2xl card-hover border border-white/20 ml-8">
+                        <div class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black text-lg text-white mb-1">SITE MANAGER</h4>
+                            <p class="text-gray-200 font-semibold">ALFIAN GIFFARI</p>
+                            <p class="text-sm text-gray-300">Pengawas Lapangan</p>
+                        </div>
+                    </div>
+
+                    <!-- K3 -->
+                    <div class="flex items-start gap-4 p-6 bg-white/10 rounded-2xl card-hover border border-white/20 ml-8">
+                        <div class="w-14 h-14 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shield-alt text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-black text-lg text-white mb-1">K3</h4>
+                            <p class="text-gray-200 font-semibold">ANSARK</p>
+                            <p class="text-sm text-gray-300">Keselamatan & Kesehatan Kerja</p>
+                        </div>
+                    </div>
+
+                    <!-- Keuangan -->
+                    <div class="flex items-start gap-4 p-6 bg-white/10 rounded-2xl card-hover border border-white/20 ml-12">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-calculator text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">KEUANGAN</h4>
+                            <p class="text-gray-200">MUH REZKI AKBAR</p>
+                            <p class="text-xs text-gray-300">Manager Keuangan</p>
+                        </div>
+                    </div>
+
+                    <!-- Administrasi -->
+                    <div class="flex items-start gap-4 p-6 bg-white/10 rounded-2xl card-hover border border-white/20 ml-12">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-alt text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">ADMINISTRASI</h4>
+                            <p class="text-gray-200">ANGGER DEREN PRATIWI</p>
+                            <p class="text-xs text-gray-300">Admin Project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info - CARD GELAP AGAR MUDAH DIBACA -->
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center animate-fade-in bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-electric-blue/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-graduate text-electric-blue text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">Tenaga Bersertifikat</h4>
+                    <p class="text-gray-300 text-sm">Seluruh tim teknis memiliki sertifikat kompetensi resmi</p>
+                </div>
+                <div class="text-center animate-fade-in bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20" style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 bg-electric-orange/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-medal text-electric-orange text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">Pengalaman Luas</h4>
+                    <p class="text-gray-300 text-sm">Rata-rata pengalaman tim lebih dari 5 tahun di bidang kelistrikan</p>
+                </div>
+                <div class="text-center animate-fade-in bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20" style="animation-delay: 0.7s;">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-green-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">Tim Solid</h4>
+                    <p class="text-gray-300 text-sm">Kerjasama tim yang kompak untuk hasil terbaik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section dengan Background Image -->
+    <section id="kontak" class="py-20 section-bg text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 animate-fade-in">
+                <div class="inline-flex items-center px-4 py-2 bg-electric-orange/20 text-electric-orange rounded-full font-semibold mb-6 border border-electric-orange/30">
+                    <i class="fas fa-phone mr-2"></i>
+                    Hubungi Kami
+                </div>
+                <h2 class="text-5xl font-black mb-6">
+                    Konsultasi <span class="text-electric-orange">Gratis</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-electric-orange to-yellow-400 rounded-full mx-auto mb-8"></div>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Siap membantu kebutuhan kelistrikan Anda dengan solusi terbaik dan profesional. Hubungi kami sekarang!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info dengan animasi -->
+                <div class="space-y-8 animate-slide-in">
+                    <div>
+                        <h3 class="text-3xl font-black mb-8 flex items-center gap-3">
+                            <i class="fas fa-info-circle text-electric-orange animate-pulse"></i>
+                            Informasi Kontak
+                        </h3>
+                        <div class="space-y-6">
+                            <!-- Address -->
+                            <div class="flex items-start gap-4 p-4 glass-effect rounded-xl card-hover">
+                                <div class="p-3 bg-electric-orange rounded-xl animate-pulse-glow">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-white mb-2">Alamat Kantor</h4>
+                                    <p class="text-blue-100 leading-relaxed">
+                                        Jalan Faisal X Kompleks Green Faisal No 41A<br />
+                                        Kel. Banta-Bantaeng, Kec. Rappocini<br />
+                                        <strong>Kota Makassar, Sulawesi Selatan</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4 p-4 glass-effect rounded-xl card-hover">
+                                <div class="p-3 bg-green-500 rounded-xl animate-pulse-glow" style="animation-delay: 0.5s;">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-white mb-2">Telepon & WhatsApp</h4>
+                                    <p class="text-blue-100 text-xl font-black">085341306123</p>
+                                    <p class="text-blue-200 text-sm">24/7 Siap Melayani</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="flex items-start gap-4 p-4 glass-effect rounded-xl card-hover">
+                                <div class="p-3 bg-blue-500 rounded-xl animate-pulse-glow" style="animation-delay: 1s;">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-white mb-2">Email</h4>
+                                    <p class="text-blue-100">triputragowatamandir@gmail.com</p>
+                                    <p class="text-blue-200 text-sm">Respon dalam 24 jam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Contact Form -->
+<div class="animate-slide-in" style="animation-delay: 0.3s;">
+    <div class="bg-white p-8 rounded-3xl shadow-2xl card-hover">
+        <h3 class="text-3xl font-black text-gray-800 mb-8 flex items-center gap-3">
+            <i class="fas fa-paper-plane text-electric-orange"></i>
+            Form Konsultasi
+        </h3>
+        <form id="contactForm" class="space-y-6" onsubmit="sendToWhatsApp(event)">
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="animate-fade-in" style="animation-delay: 0.4s;">
+                    <label class="block text-sm font-black text-gray-700 mb-2">
+                        Nama Lengkap *
+                    </label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-electric-blue focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
+                        placeholder="Masukkan nama lengkap"
+                    />
+                </div>
+                <div class="animate-fade-in" style="animation-delay: 0.5s;">
+                    <label class="block text-sm font-black text-gray-700 mb-2">
+                        No. Telepon *
+                    </label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-electric-blue focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
+                        placeholder="08XXXXXXXXXX"
+                    />
+                </div>
+            </div>
+            
+            <div class="animate-fade-in" style="animation-delay: 0.6s;">
+                <label class="block text-sm font-black text-gray-700 mb-2">
+                    Email *
+                </label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-electric-blue focus:border-transparent transition-all duration-300 text-gray-900 bg-white"
+                    placeholder="nama@email.com"
+                />
+            </div>
+            
+            <div class="animate-fade-in" style="animation-delay: 0.7s;">
+                <label class="block text-sm font-black text-gray-700 mb-2">
+                    Jenis Layanan *
+                </label>
+                <select name="service" id="service" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-electric-blue focus:border-transparent transition-all duration-300 text-gray-900 bg-white font-medium">
+                    <option value="" class="text-gray-500">Pilih jenis layanan</option>
+                    <option value="Listrik Distribusi">Listrik Distribusi</option>
+                    <option value="Listrik Instalasi">Listrik Instalasi</option>
+                    <option value="Inspeksi Kendala Listrik">Inspeksi Kendala Listrik</option>
+                    <option value="Konsultasi Umum">Konsultasi Umum</option>
+                    <option value="Maintenance">Maintenance</option>
+                </select>
+            </div>
+            
+            <div class="animate-fade-in" style="animation-delay: 0.8s;">
+                <label class="block text-sm font-black text-gray-700 mb-2">
+                    Detail Proyek *
+                </label>
+                <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-electric-blue focus:border-transparent resize-none transition-all duration-300 text-gray-900 bg-white"
+                    placeholder="Jelaskan kebutuhan proyek Anda secara detail..."
+                ></textarea>
+            </div>
+            
+            <button
+                type="submit"
+                class="w-full magnetic-btn bg-gradient-to-r from-electric-orange to-orange-600 hover:from-electric-orange hover:to-orange-700 text-white py-4 rounded-xl font-black transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 electric-glow animate-fade-in submit-btn"
+                style="animation-delay: 0.9s;"
+            >
+                <i class="fas fa-paper-plane"></i>
+                Kirim via WhatsApp
+                <i class="fab fa-whatsapp ml-2"></i>
+            </button>
+        </form>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 flex items-center justify-center">
+                            <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black gradient-text">TRITAMA</div>
+                            <div class="text-sm text-gray-400">PT. Triputra Gowata Mandiri</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md leading-relaxed">
+                        <strong class="text-white">Solusi terpercaya</strong> untuk semua kebutuhan kelistrikan Anda dengan standar kualitas tinggi, teknologi modern, dan layanan profesional bersertifikat.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-2 text-sm text-gray-400">
+                            <i class="fas fa-certificate text-electric-orange"></i>
+                            <span>ISO Certified</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-400">
+                            <i class="fas fa-handshake text-electric-blue"></i>
+                            <span>PLN Partner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-black text-lg mb-6 text-electric-orange">Layanan Kami</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#layanan" class="hover:text-electric-orange transition-all duration-300 flex items-center gap-2 group">
+                            <i class="fas fa-bolt text-xs"></i>Listrik Distribusi
+                        </a></li>
+                        <li><a href="#layanan" class="hover:text-electric-orange transition-all duration-300 flex items-center gap-2 group">
+                            <i class="fas fa-wrench text-xs"></i>Listrik Instalasi
+                        </a></li>
+                        <li><a href="#layanan" class="hover:text-electric-orange transition-all duration-300 flex items-center gap-2 group">
+                            <i class="fas fa-search text-xs"></i>Inspeksi Kendala
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-black text-lg mb-6 text-electric-blue">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt text-electric-orange mt-1"></i>
+                            <span>Makassar, Sulawesi Selatan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-green-400"></i>
+                            <span class="font-black">085341306123</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span>triputragowatamandir@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="text-sm text-gray-500">
+                        © 2024 PT. Triputra Gowata Mandiri. All rights reserved.
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="#beranda" class="text-gray-400 hover:text-electric-orange transition-all duration-300">Privacy Policy</a>
+                        <a href="#beranda" class="text-gray-400 hover:text-electric-orange transition-all duration-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a
+            href="https://wa.me/6285341306123?text=Halo%20TRITAMA,%20saya%20tertarik%20dengan%20layanan%20kelistrikan%20Anda"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-2 animate-pulse-glow magnetic-btn"
+        >
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span class="hidden group-hover:block text-sm font-black pr-2">
+                WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button
+        id="backToTop"
+        class="fixed bottom-24 right-6 bg-electric-blue hover:bg-blue-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 opacity-0 pointer-events-none z-40 magnetic-btn"
+    >
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // jQuery Document Ready
+        $(document).ready(function() {
+            console.log('TRITAMA Website Loaded with jQuery 🚀');
+            
+            // Smooth Scroll dengan jQuery
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 800);
+                }
+            });
+            
+            // Mobile Menu dengan jQuery
+            $('.mobile-menu-btn').on('click', function() {
+                $('#mobileMenu').slideToggle(300);
+                $(this).attr('aria-expanded', $(this).attr('aria-expanded') === 'false' ? 'true' : 'false');
+            });
+            
+            // Form Submission dengan jQuery
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var submitBtn = form.find('.submit-btn');
+                var originalText = submitBtn.html();
+                
+                // Validation
+                if (!validateForm(form)) return;
+                
+                // Loading state
+                submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Mengirim...');
+                submitBtn.prop('disabled', true);
+                
+                // Simulate API call
+                setTimeout(function() {
+                    // Success message
+                    showNotification('success', 'Pesan terkirim! Kami akan menghubungi Anda dalam 24 jam.');
+                    
+                    // Reset form dengan animasi
+                    form.slideUp(300, function() {
+                        $(this).trigger('reset').slideDown(300);
+                    });
+                    
+                    // Success state
+                    submitBtn.html('<i class="fas fa-check"></i> Terkirim!');
+                    setTimeout(function() {
+                        submitBtn.html(originalText);
+                        submitBtn.prop('disabled', false);
+                    }, 2000);
+                    
+                }, 2000);
+            });
+            
+            // Back to Top dengan jQuery
+            $('#backToTop').on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+            });
+            
+            // Card hover effects dengan jQuery
+            $('.card-hover').hover(
+                function() {
+                    $(this).addClass('animate-pulse-glow');
+                },
+                function() {
+                    $(this).removeClass('animate-pulse-glow');
+                }
+            );
+            
+            // Magnetic button effect dengan jQuery
+            $('.magnetic-btn').on('mousemove', function(e) {
+                var rect = this.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                
+                var centerX = rect.width / 2;
+                var centerY = rect.height / 2;
+                
+                var angleX = (y - centerY) / 10;
+                var angleY = (centerX - x) / 10;
+                
+                $(this).css('transform', 
+                    'perspective(1000px) rotateX(' + angleX + 'deg) rotateY(' + angleY + 'deg) scale3d(1.05, 1.05, 1.05)'
+                );
+            });
+            
+            $('.magnetic-btn').on('mouseleave', function() {
+                $(this).css('transform', 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)');
+            });
+            
+            // Initialize animations
+            setTimeout(function() {
+                $('.animate-fade-in').each(function(index) {
+                    $(this).css('animation-delay', (index * 0.2) + 's');
+                });
+            }, 500);
+        });
+
+        // Gallery functionality dengan jQuery
+        const projects = [
+            {
+                category: "Penerangan Jalan",
+                title: "Relokasi Lampu Jalan PJU Belopa dan Belopa Utara",
+                description: "Proyek strategis pemasangan dan relokasi sistem penerangan jalan umum menggunakan teknologi LED modern yang hemat energi dan ramah lingkungan. Pekerjaan meliputi instalasi tiang, pemasangan luminaire, dan sistem kontrol otomatis.",
+                stats: ["150+", "5km", "LED"],
+                image: "images/PJU.jpg"
+            },
+            {
+                category: "Telekomunikasi", 
+                title: "Pekerjaan IKR WiFi",
+                description: "Instalasi infrastruktur jaringan telekomunikasi dan sistem WiFi untuk area komersial dan residensial dengan teknologi fiber optic terbaru untuk kecepatan dan stabilitas maksimal.",
+                stats: ["25+", "Fiber", "WiFi6"],
+                image: "images/IKR.jpg"
+            },
+            {
+                category: "Distribusi",
+                title: "Instalasi Jaringan Distribusi", 
+                description: "Pembangunan jaringan listrik distribusi tegangan menengah dan rendah sesuai standar PLN dengan material berkualitas tinggi dan sistem proteksi yang komprehensif.",
+                stats: ["10km", "TM/TR", "PLN"],
+                image: "images/distribusi.jpg"
+            }
+        ];
+
+        let currentProjectIndex = 0;
+
+        function showProject(index) {
+            currentProjectIndex = index;
+            const project = projects[index];
+            
+            // Smooth transition dengan jQuery
+            $('.project-display').fadeOut(300, function() {
+                $('#currentCategory').text(project.category);
+                $('#currentTitle').text(project.title);
+                $('#currentDescription').text(project.description);
+                $('#currentIndex').text(index + 1);
+                
+                // UPDATE GAMBAR DINAMIS
+                $('.project-display img').attr('src', project.image);
+                $('.project-display img').attr('alt', project.title);
+                
+                // Animate stats
+                $('.stat-number').each(function(i) {
+                    var $this = $(this);
+                    $this.prop('Counter', 0).animate({
+                        Counter: project.stats[i]
+                    }, {
+                        duration: 1500,
+                        easing: 'swing',
+                        step: function(now) {
+                            $this.text(Math.ceil(now));
+                        }
+                    });
+                });
+                
+                $('.project-display').fadeIn(300);
+            });
+        }
+
+        function nextProject() {
+            currentProjectIndex = (currentProjectIndex + 1) % projects.length;
+            showProject(currentProjectIndex);
+        }
+
+        function previousProject() {
+            currentProjectIndex = (currentProjectIndex - 1 + projects.length) % projects.length;
+            showProject(currentProjectIndex);
+        }
+
+        // Mobile menu function (tetap ada untuk compatibility)
+        function toggleMobileMenu() {
+            $('#mobileMenu').slideToggle(300);
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            $('html, body').animate({ scrollTop: 0 }, 800);
+        }
+
+        // Form validation
+        function validateForm(form) {
+            var email = form.find('input[type="email"]');
+            var phone = form.find('input[type="tel"]');
+            
+            // Email validation
+            if (!email.val().includes('@')) {
+                showNotification('error', 'Format email tidak valid');
+                email.focus();
+                return false;
+            }
+            
+            // Phone validation
+            if (phone.val().length < 10) {
+                showNotification('error', 'Nomor telepon terlalu pendek');
+                phone.focus();
+                return false;
+            }
+            
+            return true;
+        }
+
+        // Notification system
+        function showNotification(type, message) {
+            var notification = $('#notification');
+            notification.removeClass('success error info hidden')
+                       .addClass(type + ' show')
+                       .html('<i class="fas fa-' + getNotificationIcon(type) + ' mr-2"></i>' + message);
+            
+            setTimeout(function() {
+                notification.removeClass('show').addClass('hidden');
+            }, 5000);
+        }
+
+        function getNotificationIcon(type) {
+            switch(type) {
+                case 'success': return 'check-circle';
+                case 'error': return 'exclamation-circle';
+                case 'info': return 'info-circle';
+                default: return 'bell';
+            }
+        }
+
+        // Scroll effects dengan hybrid approach
+        window.addEventListener('scroll', function() {
+            const backToTop = $('#backToTop');
+            const navbar = $('#navbar');
+            
+            if (window.scrollY > 300) {
+                backToTop.removeClass('opacity-0 pointer-events-none').addClass('opacity-100');
+                navbar.addClass('shadow-xl bg-white/95');
+            } else {
+                backToTop.addClass('opacity-0 pointer-events-none').removeClass('opacity-100');
+                navbar.removeClass('shadow-xl');
+            }
+            
+            // Update loading bar
+            const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = (window.scrollY / scrollableHeight) * 100;
+            $('#loadingBar').css('width', scrollProgress + '%');
+        });
+
+        // Initialize gallery on load
+        $(window).on('load', function() {
+            showProject(0);
+            $('#totalProjects').text(projects.length);
+        });
+
+        // Fungsi kirim ke WhatsApp
+function sendToWhatsApp(event) {
+    event.preventDefault();
+    
+    // Ambil data dari form
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+    
+    // Format pesan yang professional
+    const text = `🔌 *KONSULTASI TRITAMA* 🔌
+
+📋 *DATA CLIENT:*
+• Nama: ${name}
+• Telepon: ${phone}
+• Email: ${email}
+
+💡 *JENIS LAYANAN:*
+${service}
+
+📝 *DETAIL PROYEK:*
+${message}
+
+⏰ *TIMESTAMP:*
+${new Date().toLocaleString('id-ID')}
+
+_*Pesan otomatis dari website TRITAMA*_`;
+    
+    // Encode text untuk URL
+    const encodedText = encodeURIComponent(text);
+    
+    // Redirect ke WhatsApp
+    const whatsappUrl = `https://wa.me/6285341306123?text=${encodedText}`;
+    window.open(whatsappUrl, '_blank');
+    
+    // Tampilkan notifikasi sukses
+    showNotification('success', 'Buka WhatsApp untuk mengirim pesan konsultasi!');
+    
+    // Reset form
+    event.target.reset();
+}
+
+// Fungsi notifikasi (pastikan sudah ada di kode)
+function showNotification(type, message) {
+    var notification = $('#notification');
+    notification.removeClass('success error info hidden')
+               .addClass(type + ' show')
+               .html('<i class="fas fa-' + getNotificationIcon(type) + ' mr-2"></i>' + message);
+    
+    setTimeout(function() {
+        notification.removeClass('show').addClass('hidden');
+    }, 5000);
+}
+
+function getNotificationIcon(type) {
+    switch(type) {
+        case 'success': return 'check-circle';
+        case 'error': return 'exclamation-circle';
+        case 'info': return 'info-circle';
+        default: return 'bell';
+    }
+}
+    </script>
+</body>
+</html>

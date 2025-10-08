@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek - TRITAMA | Portfolio Kontraktor Listrik</title>
+    <meta name="description" content="Portfolio proyek PT. Triputra Gowata Mandiri - Relokasi PJU Belopa, Instalasi IKR WiFi, Jaringan Distribusi Listrik">
+    
+    <!-- FRAMEWORK SAMA PERSIS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'electric-blue': '#1e40af',
+                        'electric-orange': '#f59e0b',
+                        'dark-blue': '#1e3a8a',
+                        'light-blue': '#dbeafe',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+                        'slide-in': 'slide-in 0.8s ease-out',
+                        'fade-in': 'fade-in 0.8s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        @keyframes pulse-glow {
+            0% { 
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+                transform: scale(1);
+            }
+            100% { 
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3);
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes slide-in {
+            0% { opacity: 0; transform: translateY(50px) scale(0.9); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #f59e0b 50%, #1e40af 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .section-bg {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .section-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        .section-bg > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        #projects-hero { 
+         background-image: url('images/gallery-bg.jpg'); 
+        }
+
+        #projects-hero::before { 
+         background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .electric-glow {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .electric-glow:hover {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.8), 0 0 40px rgba(245, 158, 11, 0.3);
+            transform: translateY(-5px) scale(1.02);
+        }
+        /* =========================== */
+/* RESPONSIVE FIXES - PROJECTS */
+/* =========================== */
+
+@media (max-width: 640px) {
+    .text-5xl, .text-6xl, .text-7xl {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .text-4xl {
+        font-size: 2rem !important;
+    }
+    
+    .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .p-8 {
+        padding: 1.5rem !important;
+    }
+    
+    .p-6 {
+        padding: 1rem !important;
+    }
+    
+    .grid-cols-2, .grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    input, select, textarea {
+        font-size: 16px !important;
+        min-height: 44px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .text-4xl {
+        font-size: 1.75rem !important;
+    }
+}
+    </style>
+</head>
+<body class="bg-white font-inter">
+    <!-- Navigation SAMA PERSIS -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg transition-all duration-500" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 group cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold gradient-text">TRITAMA</div>
+                        <div class="text-xs text-gray-600">PT. Triputra Gowata Mandiri</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Beranda</span>
+                    </a>
+                    <a href="index.html#tentang" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Tentang</span>
+                    </a>
+                    <a href="index.html#layanan" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Layanan</span>
+                    </a>
+                    <a href="projects.html" class="nav-link text-electric-blue font-medium relative group">
+                        <span class="relative z-10">Proyek</span>
+                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange"></div>
+                    </a>
+                    <a href="certifications.html" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Sertifikat</span>
+                    </a>
+                    <a href="index.html#kontak" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Kontak</span>
+                    </a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:block">
+                   <a href="index.html#kontak" class="magnetic-btn bg-gradient-to-r from-electric-orange to-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 electric-glow">
+                        <i class="fas fa-phone mr-2"></i>Konsultasi
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-600 hover:text-electric-blue transition-colors duration-300" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden bg-white/95 backdrop-blur-md border-t shadow-xl hidden">
+            <div class="px-4 py-6 space-y-2">
+                <a href="index.html" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-home mr-3"></i>Beranda
+                </a>
+                <a href="index.html#tentang" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-building mr-3"></i>Tentang
+                </a>
+                <a href="index.html#layanan" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-tools mr-3"></i>Layanan
+                </a>
+                <a href="projects.html" class="block text-electric-blue bg-blue-50 py-3 px-4 rounded-lg font-medium">
+                    <i class="fas fa-project-diagram mr-3"></i>Proyek
+                </a>
+                <a href="certifications.html" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-certificate mr-3"></i>Sertifikat
+                </a>
+<a href="index.html#kontak" class="block bg-gradient-to-r from-electric-orange to-orange-600 text-white text-center py-3 px-4 rounded-xl font-semibold mt-4 hover:shadow-lg transition-all duration-300">
+    <i class="fas fa-phone mr-2"></i>Konsultasi Gratis
+</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section untuk Projects -->
+   <section id="projects-hero" class="pt-20 min-h-[60vh] section-bg text-white flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-5xl lg:text-7xl font-black mb-6">
+                <span class="gradient-text">Proyek</span> Kami
+            </h1>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+                Portfolio lengkap proyek kelistrikan yang telah kami selesaikan dengan standar kualitas terbaik
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Projects Content -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Project 1 Detail -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl mb-16 card-hover">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="inline-flex items-center px-4 py-2 bg-electric-orange text-white text-sm rounded-full mb-4 font-semibold">
+                            <i class="fas fa-lightbulb mr-2"></i>
+                            Penerangan Jalan Umum
+                        </div>
+                        <h2 class="text-4xl font-black text-gray-800 mb-4">
+                            Relokasi Lampu Jalan PJU Belopa dan Belopa Utara
+                        </h2>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-calendar text-electric-orange"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-map-marker-alt text-electric-orange"></i>
+                                <span>Kabupaten Luwu</span>
+                            </div>
+                        </div>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Proyek strategis pemasangan dan relokasi sistem penerangan jalan umum menggunakan teknologi LED modern yang hemat energi dan ramah lingkungan. Pekerjaan meliputi instalasi tiang, pemasangan luminaire, dan sistem kontrol otomatis.
+                        </p>
+                        
+                        <h3 class="text-xl font-black text-gray-800 mb-4">Scope Pekerjaan:</h3>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Relokasi tiang lampu PJU existing</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Pemasangan sistem penerangan LED baru</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Instalasi sistem kontrol otomatis</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Testing dan commissioning</span>
+                            </li>
+                        </ul>
+
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="text-center p-4 bg-blue-50 rounded-xl">
+                                <div class="text-2xl font-black text-electric-blue">150+</div>
+                                <div class="text-sm text-gray-600">Titik Lampu</div>
+                            </div>
+                            <div class="text-center p-4 bg-orange-50 rounded-xl">
+                                <div class="text-2xl font-black text-electric-orange">5km</div>
+                                <div class="text-sm text-gray-600">Jarak Jalan</div>
+                            </div>
+                            <div class="text-center p-4 bg-green-50 rounded-xl">
+                                <div class="text-2xl font-black text-green-600">LED</div>
+                                <div class="text-sm text-gray-600">Teknologi</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-xl p-4 mb-6">
+                            <h4 class="font-black text-gray-800 mb-2 flex items-center gap-2">
+                                <i class="fas fa-user-tie text-electric-orange"></i>
+                                Client
+                            </h4>
+                            <p class="text-gray-600">Pemerintah Kabupaten Luwu - Dinas Perhubungan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="images/PJU.jpg" 
+                             alt="Proyek Penerangan Jalan Umum Belopa" 
+                             class="w-full h-auto rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 Detail -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl mb-16 card-hover">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img src="images/IKR.jpg" 
+                             alt="Proyek IKR WiFi" 
+                             class="w-full h-auto rounded-2xl shadow-lg">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="inline-flex items-center px-4 py-2 bg-green-500 text-white text-sm rounded-full mb-4 font-semibold">
+                            <i class="fas fa-wifi mr-2"></i>
+                            Telekomunikasi
+                        </div>
+                        <h2 class="text-4xl font-black text-gray-800 mb-4">
+                            Pekerjaan IKR WiFi
+                        </h2>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-calendar text-green-500"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-map-marker-alt text-green-500"></i>
+                                <span>Area Makassar</span>
+                            </div>
+                        </div>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Instalasi infrastruktur jaringan telekomunikasi dan sistem WiFi untuk area komersial dan residensial dengan teknologi fiber optic terbaru untuk kecepatan dan stabilitas maksimal.
+                        </p>
+                        
+                        <h3 class="text-xl font-black text-gray-800 mb-4">Teknologi yang Digunakan:</h3>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Fiber Optic Network</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>WiFi 6 Technology</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Network Management System</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 Detail -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="inline-flex items-center px-4 py-2 bg-orange-500 text-white text-sm rounded-full mb-4 font-semibold">
+                            <i class="fas fa-bolt mr-2"></i>
+                            Distribusi Listrik
+                        </div>
+                        <h2 class="text-4xl font-black text-gray-800 mb-4">
+                            Instalasi Jaringan Distribusi
+                        </h2>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-calendar text-orange-500"></i>
+                                <span>2024</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <i class="fas fa-map-marker-alt text-orange-500"></i>
+                                <span>Sulawesi Selatan</span>
+                            </div>
+                        </div>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Pembangunan jaringan listrik distribusi tegangan menengah dan rendah sesuai standar PLN dengan material berkualitas tinggi dan sistem proteksi yang komprehensif.
+                        </p>
+                        
+                        <h3 class="text-xl font-black text-gray-800 mb-4">Scope Pekerjaan:</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Jaringan distribusi TM/TR</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Instalasi gardu distribusi</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Sistem proteksi dan grounding</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="images/distribusi.jpg" 
+                             alt="Proyek Instalasi Jaringan Distribusi" 
+                             class="w-full h-auto rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-electric-blue to-dark-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-black mb-6">Tertarik Bekerja Sama?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Konsultasikan kebutuhan proyek kelistrikan Anda dengan tim profesional kami
+            </p>
+<a href="index.html#kontak" class="inline-flex items-center gap-3 bg-electric-orange hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 electric-glow">
+    <i class="fas fa-phone-alt"></i>
+    Konsultasi Gratis
+    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+        </div>
+    </section>
+
+    <!-- Footer SAMA PERSIS -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 flex items-center justify-center">
+                            <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black gradient-text">TRITAMA</div>
+                            <div class="text-sm text-gray-400">PT. Triputra Gowata Mandiri</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md leading-relaxed">
+                        Solusi terpercaya untuk semua kebutuhan kelistrikan Anda dengan standar kualitas tinggi dan layanan profesional.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-black text-lg mb-6 text-electric-orange">Layanan</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="index.html#layanan" class="hover:text-electric-orange transition-colors">Listrik Distribusi</a></li>
+                        <li><a href="index.html#layanan" class="hover:text-electric-orange transition-colors">Listrik Instalasi</a></li>
+                        <li><a href="index.html#layanan" class="hover:text-electric-orange transition-colors">Inspeksi Kendala</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-black text-lg mb-6 text-electric-blue">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt text-electric-orange mt-1"></i>
+                            <span>Makassar, Sulawesi Selatan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-green-400"></i>
+                            <span>085341306123</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span>triputragowatamandir@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                © 2024 PT. Triputra Gowata Mandiri. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            $('#mobileMenu').slideToggle(300);
+        }
+
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
