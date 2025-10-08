@@ -26,7 +26,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 12**: `</BODY> </HTML>` – Menutup tag body dan HTML.  
   - *Penjelasan*: Mengakhiri struktur dokumen secara keseluruhan.  
 **Output**:  
-![Output Percobaan 2A](images/percobaan2_a_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan2_a.png?raw=true)
 
 ### File: percobaan2_b.js
 **Deskripsi**: File script eksternal untuk mendukung event atau fungsi di HTML.  
@@ -59,7 +59,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 20**: `</body> </html>` – Menutup tag body dan html.  
   - *Penjelasan*: Mengakhiri struktur dokumen.  
 **Output**:  
-![Output Percobaan 2C](images/percobaan2_c_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan2_c.png?raw=true)
 
 ### File: percobaan2_d.html
 **Deskripsi**: Contoh sederhana penggunaan `document.write` untuk output teks.  
@@ -74,7 +74,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 7**: `</BODY> </HTML>` – Menutup tag body dan HTML.  
   - *Penjelasan*: Mengakhiri struktur dokumen.  
 **Output**:  
-![Output Percobaan 2D](images/percobaan2_d_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan2_d.png?raw=true)
 
 ## Percobaan 3
 
@@ -91,7 +91,8 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 10**: `</BODY> </HTML>` – Menutup tag body dan HTML.  
   - *Penjelasan*: Mengakhiri dokumen.  
 **Output**:  
-![Output Percobaan 3](images/percobaan3_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan3.png?raw=true)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan3.1.png?raw=true)
 
 ## Percobaan 4
 
@@ -108,7 +109,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 9**: `</BODY> </HTML>` – Menutup tag.  
   - *Penjelasan*: Mengakhiri dokumen.  
 **Output**:  
-![Output Percobaan 4A](images/percobaan4_a_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan4_a.png?raw=true)
 
 ### File: percobaan4_b.html
 **Deskripsi**: Menggunakan dialog confirm untuk input boolean.  
@@ -122,8 +123,10 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
   - *Penjelasan*: Mengambil hasil confirm dan menampilkan teks dengan nilai jawaban.  
 - **Baris 11**: `</BODY> </HTML>` – Menutup tag.  
   - *Penjelasan*: Mengakhiri dokumen.  
-**Output**:  
-![Output Percobaan 4B](images/percobaan4_b_output.png)
+**Output**:
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan4_b.png?raw=true)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan4_b1.png?raw=true)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan4_b2.png?raw=true)
 
 ## Percobaan 5
 
@@ -144,7 +147,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 8**: `</script>` – Menutup script.  
   - *Penjelasan*: Mengakhiri blok JavaScript.  
 **Output**:  
-![Output Percobaan 5A](images/percobaan5_a_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan5_a.png?raw=true)
 
 ### File: percobaan5_b.html & percobaan5_c.html
 **Deskripsi**: Demonstrasi variabel global dan lokal dalam fungsi.  
@@ -165,7 +168,8 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 12**: `</SCRIPT>` – Menutup script.  
   - *Penjelasan*: Mengakhiri blok JavaScript.  
 **Output**:  
-![Output Percobaan 5B](images/percobaan5_b_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan5_b.png?raw=true)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan5_c.png?raw=true)
 
 ## Percobaan 7
 
@@ -192,7 +196,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 26**: `</BODY> </HTML>` – Menutup tag.  
   - *Penjelasan*: Mengakhiri dokumen.  
 **Output**:  
-![Output Percobaan 7](images/percobaan7_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan5_c.png?raw=true)
 
 ## Percobaan 8
 
@@ -217,7 +221,7 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 18**: `</BODY> </HTML>` – Menutup tag.  
   - *Penjelasan*: Mengakhiri dokumen.  
 **Output**:  
-![Output Percobaan 8](images/percobaan8_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan8.png?raw=true)
 
 ## Percobaan 9
 
@@ -242,4 +246,4 @@ Repository ini berisi percobaan JavaScript berdasarkan Modul 7: Dasar JavaScript
 - **Baris 12**: `</BODY> </HTML>` – Menutup tag.  
   - *Penjelasan*: Mengakhiri dokumen.  
 **Output**:  
-![Output Percobaan 9](images/percobaan9_output.png)
+![alt text](https://github.com/yuuunitachan-cmd/pemrograman-web/blob/master/pertemuan_5/Tugas_Modul/images/outputPercobaan9.png?raw=true)
