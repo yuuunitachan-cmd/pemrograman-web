@@ -21,21 +21,34 @@ try {
     exit();
 }
 
-// Query data tugas
-$query = "SELECT t.*, k.nama_kategori, k.warna 
-          FROM tugas t 
-          LEFT JOIN kategori k ON t.id_kategori = k.id 
-          WHERE t.id_pengguna = :id_pengguna 
-          ORDER BY t.dibuat_pada DESC";
+$input = file_get_contents("php://input");
+$data = json_decode($input);
+
+// Validasi
+if (!isset($data->judul) || empty(trim($data->judul))) {
+    echo json_encode(['success' => false, 'message' => 'Judul tugas harus diisi']);
+    exit();
+}
+
+// INSERT tugas baru
+$query = "INSERT INTO tugas (id_pengguna, judul, deskripsi, id_kategori, prioritas, status, tanggal_deadline, waktu_deadline) 
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $db->prepare($query);
-$stmt->bindParam(":id_pengguna", $_SESSION['id_pengguna']);
-$stmt->execute();
-
-$tugas = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-echo json_encode([
-    'success' => true,
-    'data' => $tugas
+$success = $stmt->execute([
+    $_SESSION['id_pengguna'],
+    trim($data->judul),
+    isset($data->deskripsi) ? trim($data->deskripsi) : null,
+    isset($data->id_kategori) && !empty($data->id_kategori) ? $data->id_kategori : null,
+    $data->prioritas ?? 'sedang',
+    $data->status ?? 'belum',
+    isset($data->tanggal_deadline) && !empty($data->tanggal_deadline) ? $data->tanggal_deadline : null,
+    isset($data->waktu_deadline) && !empty($data->waktu_deadline) ? $data->waktu_deadline : null
 ]);
+
+if ($success) {
+    echo json_encode(['success' => true, 'message' => 'Tugas berhasil dibuat', 'id' => $db->lastInsertId()]);
+} else {
+    echo json_encode(['success' => false, 'message' => 'Gagal membuat tugas']);
+}
 ?>
