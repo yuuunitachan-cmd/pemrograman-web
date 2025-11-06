@@ -1,0 +1,11 @@
+/laragon/
+
+.env
+
+*.log
+
+.DS_Store
+Thumbs.db
+
+tmp/
+temp/
