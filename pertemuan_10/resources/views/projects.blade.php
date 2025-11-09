@@ -132,9 +132,7 @@
             box-shadow: 0 0 30px rgba(245, 158, 11, 0.8), 0 0 40px rgba(245, 158, 11, 0.3);
             transform: translateY(-5px) scale(1.02);
         }
-        /* =========================== */
-/* RESPONSIVE FIXES - PROJECTS */
-/* =========================== */
+ 
 
 @media (max-width: 640px) {
     .text-5xl, .text-6xl, .text-7xl {
@@ -187,12 +185,12 @@
     </style>
 </head>
 <body class="bg-white font-inter">
-    <!-- Navigation SAMA PERSIS -->
+
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg transition-all duration-500" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3 group cursor-pointer" onclick="window.location.href='index.html'">
+                <div class="flex items-center space-x-3 group cursor-pointer" onclick="window.location.href='/'">
                     <div class="w-12 h-12 flex items-center justify-center">
                         <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
                     </div>
@@ -204,67 +202,67 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex space-x-8">
-                    <a href="index.html" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                    <a href="/" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
                         <span class="relative z-10">Beranda</span>
                     </a>
-                    <a href="index.html#tentang" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                    <a href="/#tentang" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
                         <span class="relative z-10">Tentang</span>
                     </a>
-                    <a href="index.html#layanan" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                    <a href="/l#layanan" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
                         <span class="relative z-10">Layanan</span>
                     </a>
-                    <a href="projects.html" class="nav-link text-electric-blue font-medium relative group">
+                    <a href="/projects" class="nav-link text-electric-blue font-medium relative group">
                         <span class="relative z-10">Proyek</span>
                         <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange"></div>
                     </a>
-                    <a href="certifications.html" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                    <a href="/certifications" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
                         <span class="relative z-10">Sertifikat</span>
                     </a>
-                    <a href="index.html#kontak" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                    <a href="/#kontak" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
                         <span class="relative z-10">Kontak</span>
                     </a>
                 </div>
 
-                <!-- CTA Button -->
+                 
                 <div class="hidden lg:block">
-                   <a href="index.html#kontak" class="magnetic-btn bg-gradient-to-r from-electric-orange to-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 electric-glow">
+                   <a href="/#kontak" class="magnetic-btn bg-gradient-to-r from-electric-orange to-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 electric-glow">
                         <i class="fas fa-phone mr-2"></i>Konsultasi
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
+               
                 <button class="lg:hidden text-gray-600 hover:text-electric-blue transition-colors duration-300" onclick="toggleMobileMenu()">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
+         
         <div id="mobileMenu" class="lg:hidden bg-white/95 backdrop-blur-md border-t shadow-xl hidden">
             <div class="px-4 py-6 space-y-2">
-                <a href="index.html" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                <a href="/" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
                     <i class="fas fa-home mr-3"></i>Beranda
                 </a>
-                <a href="index.html#tentang" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                <a href="/#tentang" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
                     <i class="fas fa-building mr-3"></i>Tentang
                 </a>
-                <a href="index.html#layanan" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                <a href="/#layanan" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
                     <i class="fas fa-tools mr-3"></i>Layanan
                 </a>
-                <a href="projects.html" class="block text-electric-blue bg-blue-50 py-3 px-4 rounded-lg font-medium">
+                <a href="/projects" class="block text-electric-blue bg-blue-50 py-3 px-4 rounded-lg font-medium">
                     <i class="fas fa-project-diagram mr-3"></i>Proyek
                 </a>
-                <a href="certifications.html" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                <a href="/certifications" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
                     <i class="fas fa-certificate mr-3"></i>Sertifikat
                 </a>
-<a href="index.html#kontak" class="block bg-gradient-to-r from-electric-orange to-orange-600 text-white text-center py-3 px-4 rounded-xl font-semibold mt-4 hover:shadow-lg transition-all duration-300">
+<a href="/#kontak" class="block bg-gradient-to-r from-electric-orange to-orange-600 text-white text-center py-3 px-4 rounded-xl font-semibold mt-4 hover:shadow-lg transition-all duration-300">
     <i class="fas fa-phone mr-2"></i>Konsultasi Gratis
 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section untuk Projects -->
+ 
    <section id="projects-hero" class="pt-20 min-h-[60vh] section-bg text-white flex items-center relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="text-5xl lg:text-7xl font-black mb-6">
@@ -276,7 +274,7 @@
         </div>
     </section>
 
-    <!-- Detailed Projects Content -->
+ 
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Project 1 Detail -->
@@ -457,14 +455,14 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+ 
     <section class="py-20 bg-gradient-to-r from-electric-blue to-dark-blue text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-black mb-6">Tertarik Bekerja Sama?</h2>
             <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                 Konsultasikan kebutuhan proyek kelistrikan Anda dengan tim profesional kami
             </p>
-<a href="index.html#kontak" class="inline-flex items-center gap-3 bg-electric-orange hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 electric-glow">
+<a href="/#kontak" class="inline-flex items-center gap-3 bg-electric-orange hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 electric-glow">
     <i class="fas fa-phone-alt"></i>
     Konsultasi Gratis
     <i class="fas fa-arrow-right ml-2"></i>
@@ -472,7 +470,7 @@
         </div>
     </section>
 
-    <!-- Footer SAMA PERSIS -->
+ 
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
@@ -494,9 +492,9 @@
                 <div>
                     <h4 class="font-black text-lg mb-6 text-electric-orange">Layanan</h4>
                     <ul class="space-y-3 text-gray-400">
-                        <li><a href="index.html#layanan" class="hover:text-electric-orange transition-colors">Listrik Distribusi</a></li>
-                        <li><a href="index.html#layanan" class="hover:text-electric-orange transition-colors">Listrik Instalasi</a></li>
-                        <li><a href="index.html#layanan" class="hover:text-electric-orange transition-colors">Inspeksi Kendala</a></li>
+                        <li><a href="/#layanan" class="hover:text-electric-orange transition-colors">Listrik Distribusi</a></li>
+                        <li><a href="/#layanan" class="hover:text-electric-orange transition-colors">Listrik Instalasi</a></li>
+                        <li><a href="/#layanan" class="hover:text-electric-orange transition-colors">Inspeksi Kendala</a></li>
                     </ul>
                 </div>
                 

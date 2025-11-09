@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat & Akreditasi - TRITAMA | Kontraktor Listrik Bersertifikat ISO</title>
+    <meta name="description" content="Sertifikat dan akreditasi PT. Triputra Gowata Mandiri - ISO 9001:2015, ISO 45001:2018, SMK3, CSMS, dan akreditasi Dirjen Ketenagalistrikan">
+    
+    <!-- FRAMEWORK SAMA PERSIS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'electric-blue': '#1e40af',
+                        'electric-orange': '#f59e0b',
+                        'dark-blue': '#1e3a8a',
+                        'light-blue': '#dbeafe',
+                    },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+                        'slide-in': 'slide-in 0.8s ease-out',
+                        'fade-in': 'fade-in 0.8s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes pulse-glow {
+            0% { 
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+                transform: scale(1);
+            }
+            100% { 
+                box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3);
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes slide-in {
+            0% { opacity: 0; transform: translateY(50px) scale(0.9); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #f59e0b 50%, #1e40af 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-bg {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .section-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        
+        .section-bg > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        #certs-hero { 
+            background-image: url('images/certifications-bg.jpg'); 
+        }
+
+        #certs-hero::before { 
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .electric-glow {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .electric-glow:hover {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.8), 0 0 40px rgba(245, 158, 11, 0.3);
+            transform: translateY(-5px) scale(1.02);
+        }
+
+ 
+
+@media (max-width: 640px) {
+    .text-5xl, .text-6xl, .text-7xl {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .text-4xl {
+        font-size: 2rem !important;
+    }
+    
+    .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    .p-8 {
+        padding: 1.5rem !important;
+    }
+    
+    .p-6 {
+        padding: 1rem !important;
+    }
+    
+    .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    input, select, textarea {
+        font-size: 16px !important;
+        min-height: 44px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .text-4xl {
+        font-size: 1.75rem !important;
+    }
+    
+    .px-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
+    </style>
+</head>
+<body class="bg-white font-inter">
+ 
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg transition-all duration-500" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+
+                <div class="flex items-center space-x-3 group cursor-pointer" onclick="window.location.href=''">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold gradient-text">TRITAMA</div>
+                        <div class="text-xs text-gray-600">PT. Triputra Gowata Mandiri</div>
+                    </div>
+                </div>
+
+  
+                <div class="hidden lg:flex space-x-8">
+                    <a href="/" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Beranda</span>
+                    </a>
+                    <a href="/#tentang" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Tentang</span>
+                    </a>
+                    <a href="/#layanan" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Layanan</span>
+                    </a>
+                    <a href="/projects" class="nav-link text-gray-700 hover:text-electric-blue transition-all duration-300 font-medium relative group">
+                        <span class="relative z-10">Proyek</span>
+                    </a>
+                    <a href="/certifications" class="nav-link text-electric-blue font-medium relative group">
+                        <span class="relative z-10">Sertifikat</span>
+                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-electric-blue to-electric-orange"></div>
+                    </a>
+                </div>
+
+    
+<div class="hidden lg:block">
+    <a href="/#kontak" class="magnetic-btn bg-gradient-to-r from-electric-orange to-orange-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 electric-glow">
+        <i class="fas fa-phone mr-2"></i>Konsultasi
+    </a>
+</div>
+
+    
+                <button class="lg:hidden text-gray-600 hover:text-electric-blue transition-colors duration-300" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="lg:hidden bg-white/95 backdrop-blur-md border-t shadow-xl hidden">
+            <div class="px-4 py-6 space-y-2">
+                <a href="/" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-home mr-3"></i>Beranda
+                </a>
+                <a href="/#tentang" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-building mr-3"></i>Tentang
+                </a>
+                <a href="/#layanan" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-tools mr-3"></i>Layanan
+                </a>
+                <a href="/projects" class="block text-gray-700 hover:text-electric-blue transition-all duration-300 py-3 px-4 rounded-lg hover:bg-blue-50 font-medium">
+                    <i class="fas fa-project-diagram mr-3"></i>Proyek
+                </a>
+                <a href="/certifications " class="block text-electric-blue bg-blue-50 py-3 px-4 rounded-lg font-medium">
+                    <i class="fas fa-certificate mr-3"></i>Sertifikat
+                </a>
+<a href="/#kontak" class="block bg-gradient-to-r from-electric-orange to-orange-600 text-white text-center py-3 px-4 rounded-xl font-semibold mt-4 hover:shadow-lg transition-all duration-300">
+    <i class="fas fa-phone mr-2"></i>Konsultasi Gratis
+</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+   <section id="certs-hero" class="pt-20 min-h-[60vh] section-bg text-white flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-5xl lg:text-7xl font-black mb-6">
+                <span class="gradient-text">Sertifikat</span> & Akreditasi
+            </h1>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+                Standar kualitas dan keamanan yang diakui secara nasional dan internasional
+            </p>
+        </div>
+    </section>
+
+  
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center px-4 py-2 bg-blue-100 text-electric-blue rounded-full font-semibold mb-4">
+                        <i class="fas fa-globe mr-2"></i>
+                        Sertifikat Internasional
+                    </div>
+                    <h2 class="text-4xl font-black text-gray-800 mb-4">Standar <span class="gradient-text">Internasional</span></h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Sertifikat sistem manajemen mutu dan K3 yang diakui secara global
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+              
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover border border-blue-200">
+                        <div class="flex items-start gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-glow">
+                                <i class="fas fa-certificate text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded-full mb-3 font-semibold">
+                                    ISO Certified
+                                </div>
+                                <h3 class="text-2xl font-black text-gray-800 mb-3">ISO 9001:2015</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Sistem Manajemen Mutu untuk memastikan konsistensi kualitas dalam setiap proyek kelistrikan yang kami kerjakan.
+                                </p>
+                                <div class="flex items-center gap-4 text-sm text-gray-500">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-calendar text-blue-500"></i>
+                                        <span>Berlaku: 2023-2026</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-green-500"></i>
+                                        <span>Status: Aktif</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISO 45001 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover border border-orange-200">
+                        <div class="flex items-start gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-glow">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-orange-100 text-orange-600 text-sm rounded-full mb-3 font-semibold">
+                                    ISO Certified
+                                </div>
+                                <h3 class="text-2xl font-black text-gray-800 mb-3">ISO 45001:2018</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Sistem Manajemen Keselamatan dan Kesehatan Kerja untuk menjamin keamanan pekerja dan lingkungan proyek.
+                                </p>
+                                <div class="flex items-center gap-4 text-sm text-gray-500">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-calendar text-orange-500"></i>
+                                        <span>Berlaku: 2023-2026</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-check-circle text-green-500"></i>
+                                        <span>Status: Aktif</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ 
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center px-4 py-2 bg-green-100 text-green-600 rounded-full font-semibold mb-4">
+                        <i class="fas fa-flag mr-2"></i>
+                        Sertifikat Nasional
+                    </div>
+                    <h2 class="text-4xl font-black text-gray-800 mb-4">Akreditasi <span class="gradient-text">Nasional</span></h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Sertifikat dan akreditasi resmi dari instansi pemerintah Indonesia
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- SMK3 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover border border-green-200">
+                        <div class="flex items-start gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-glow">
+                                <i class="fas fa-hard-hat text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-green-100 text-green-600 text-sm rounded-full mb-3 font-semibold">
+                                    Kementerian Ketenagakerjaan
+                                </div>
+                                <h3 class="text-2xl font-black text-gray-800 mb-3">Sertifikat SMK3</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Sistem Manajemen Keselamatan dan Kesehatan Kerja dengan pencapaian tingkat Awal sebesar 85.94% (64 Kriteria).
+                                </p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <span>Tingkat: Awal (85.94%)</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-clock text-blue-500"></i>
+                                        <span>Masa Berlaku: 3 Tahun</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSMS -->
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover border border-red-200">
+                        <div class="flex items-start gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-glow">
+                                <i class="fas fa-clipboard-check text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-red-100 text-red-600 text-sm rounded-full mb-3 font-semibold">
+                                    PT PLN (Persero)
+                                </div>
+                                <h3 class="text-2xl font-black text-gray-800 mb-3">CSMS</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Contractor Safety Management System dengan klasifikasi Risiko Ekstrem. Lulus prakualifikasi sistem manajemen keselamatan kontraktor.
+                                </p>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-exclamation-triangle text-red-500"></i>
+                                        <span>Klasifikasi: Risiko Ekstrem</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-clock text-blue-500"></i>
+                                        <span>Masa Berlaku: 3 Tahun</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accreditations & Memberships -->
+            <div>
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-600 rounded-full font-semibold mb-4">
+                        <i class="fas fa-users mr-2"></i>
+                        Akreditasi & Keanggotaan
+                    </div>
+                    <h2 class="text-4xl font-black text-gray-800 mb-4">Legalisasi <span class="gradient-text">Resmi</span></h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Dirjen Ketenagalistrikan -->
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover border border-purple-200">
+                        <div class="flex items-start gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-glow">
+                                <i class="fas fa-bolt text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-600 text-sm rounded-full mb-3 font-semibold">
+                                    Kementerian ESDM
+                                </div>
+                                <h3 class="text-2xl font-black text-gray-800 mb-3">Badan Usaha Jasa Penunjang Tenaga Listrik</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Terakreditasi oleh Direktorat Jenderal Ketenagalistrikan Kementerian Energi dan Sumber Daya Mineral Republik Indonesia.
+                                </p>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Terdaftar dan diawasi secara resmi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AKLI -->
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl card-hover border border-indigo-200">
+                        <div class="flex items-start gap-6">
+                            <div class="w-20 h-20 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center flex-shrink-0 animate-pulse-glow">
+                                <i class="fas fa-user-tie text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-indigo-100 text-indigo-600 text-sm rounded-full mb-3 font-semibold">
+                                    Asosiasi Profesi
+                                </div>
+                                <h3 class="text-2xl font-black text-gray-800 mb-3">AKLI</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Anggota aktif Asosiasi Kontraktor Listrik Indonesia, sebagai wadah profesional dalam industri ketenagalistrikan nasional.
+                                </p>
+                                <div class="text-sm text-gray-500">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Anggota aktif dan terdaftar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Commitment -->
+    <section class="py-20 bg-gradient-to-r from-electric-blue to-dark-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-6">Komitmen <span class="text-electric-orange">Kualitas</span> Terbaik</h2>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    Setiap sertifikat dan akreditasi yang kami miliki merupakan bukti komitmen kami terhadap kualitas, keselamatan, dan kepuasan klien
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-electric-orange/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-electric-orange text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">Standar Internasional</h4>
+                    <p class="text-blue-200 text-sm">Mengikuti standar kualitas global terbaik</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-green-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">K3 Terjamin</h4>
+                    <p class="text-blue-200 text-sm">Prioritas keselamatan pekerja dan lingkungan</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-contract text-blue-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">Legalitas Lengkap</h4>
+                    <p class="text-blue-200 text-sm">Terdaftar dan diawasi instansi resmi</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-check text-purple-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-black text-white mb-2">Profesional Bersertifikat</h4>
+                    <p class="text-blue-200 text-sm">Tenaga ahli dengan kompetensi terverifikasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white rounded-3xl p-12 shadow-2xl card-hover">
+                <h2 class="text-4xl font-black text-gray-800 mb-6">Percayakan Proyek Listrik Anda pada <span class="gradient-text">Ahlinya</span></h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Dengan sertifikat dan akreditasi lengkap, kami menjamin kualitas dan keamanan pekerjaan kelistrikan Anda
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="/#kontak" class="inline-flex items-center gap-3 bg-electric-orange hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 electric-glow">
+    <i class="fas fa-phone-alt"></i>
+    Konsultasi Gratis
+</a>
+                    <a href="projects.html" class="inline-flex items-center gap-3 border-2 border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300">
+                        <i class="fas fa-project-diagram"></i>
+                        Lihat Proyek Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 flex items-center justify-center">
+                            <img src="images/logo-tritama.png" alt="TRITAMA Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black gradient-text">TRITAMA</div>
+                            <div class="text-sm text-gray-400">PT. Triputra Gowata Mandiri</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md leading-relaxed">
+                        Solusi terpercaya untuk semua kebutuhan kelistrikan Anda dengan standar kualitas tinggi dan layanan profesional bersertifikat.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-black text-lg mb-6 text-electric-orange">Layanan</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="/#layanan" class="hover:text-electric-orange transition-colors">Listrik Distribusi</a></li>
+                        <li><a href="/#layanan" class="hover:text-electric-orange transition-colors">Listrik Instalasi</a></li>
+                        <li><a href="/#layanan" class="hover:text-electric-orange transition-colors">Inspeksi Kendala</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-black text-lg mb-6 text-electric-blue">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt text-electric-orange mt-1"></i>
+                            <span>Makassar, Sulawesi Selatan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-green-400"></i>
+                            <span>085341306123</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span>triputragowatamandir@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                © 2024 PT. Triputra Gowata Mandiri. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            $('#mobileMenu').slideToggle(300);
+        }
+ 
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
